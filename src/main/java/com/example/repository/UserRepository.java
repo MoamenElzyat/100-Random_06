@@ -3,66 +3,66 @@ package com.example.repository;
 import com.example.model.Order;
 import com.example.model.User;
 import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 @Repository
-@SuppressWarnings("rawtypes")
 public class UserRepository extends MainRepository<User> {
 
     @Override
     protected String getDataPath() {
-        return "data/users.json"; // JSON file path
+        return "src/main/java/com/example/data/users.json";
     }
 
     @Override
     protected Class<User[]> getArrayType() {
-        return User[].class; // Correct return type
+        return User[].class;
     }
 
     public ArrayList<User> getUsers() {
-        return findAll(); // Uses MainRepository method
+        return (findAll()); //
     }
 
     public User getUserById(UUID userId) {
-        return findAll().stream().filter(user -> user.getId().equals(userId)).findFirst().orElse(null);
+        List<User> users = findAll();
+        System.out.println("All users: " + users); // Debugging
+        return users.stream()
+                .filter(user -> user.getId().equals(userId))
+                .findFirst()
+                .orElse(null);
     }
 
     public User addUser(User user) {
-        save(user); // Uses save() from MainRepository
+        save(user);
         return user;
     }
 
-    // Add Order to User
     public void addOrderToUser(UUID userId, Order order, OrderRepository orderRepository) {
-        List<User> users = findAll();
-
+        List<User> users = new ArrayList<>(findAll());
         for (User user : users) {
             if (user.getId().equals(userId)) {
-                user.getOrders().add(order); // Add order to user's order list
-                saveAll(new ArrayList<>(users)); // Save updated users to JSON
-
-                //  Save the order in `orders.json`
+                user.getOrders().add(order);
+                saveAll((ArrayList<User>) users);
                 orderRepository.addOrder(order);
                 return;
             }
         }
 
-        System.out.println(" User not found!");
+        System.out.println("User not found!");
     }
 
-    // Remove Order from User
     public void removeOrderFromUser(UUID userId, UUID orderId, OrderRepository orderRepository) {
-        List<User> users = findAll();
+        List<User> users = new ArrayList<>(findAll());
 
         for (User user : users) {
             if (user.getId().equals(userId)) {
                 boolean removed = user.getOrders().removeIf(order -> order.getId().equals(orderId));
 
                 if (removed) {
-                    saveAll(new ArrayList<>(users)); //  Save updated user data
-                    orderRepository.deleteOrderById(orderId); //  Delete from orders.json
+                    saveAll((ArrayList<User>) users);
+                    orderRepository.deleteOrderById(orderId);
                     return;
                 } else {
                     System.out.println("Order not found in user's order list!");
@@ -75,8 +75,23 @@ public class UserRepository extends MainRepository<User> {
     }
 
     public void deleteUserById(UUID userId) {
-        List<User> users = findAll();
+        List<User> users = new ArrayList<>(findAll());
         users.removeIf(user -> user.getId().equals(userId));
-        saveAll(new ArrayList<>(users)); // Update JSON file
+        saveAll((ArrayList<User>) users);
     }
+
+
+    public void save(User user) {
+        List<User> users = getUsers();
+
+        // Remove old version of user if exists
+        users.removeIf(existingUser -> existingUser.getId().equals(user.getId()));
+
+        // Add updated user
+        users.add(user);
+
+        // Persist the updated list
+        saveAll((ArrayList<User>) users);
+    }
+
 }

@@ -15,7 +15,7 @@ public class OrderRepository extends MainRepository<Order> {
 
     @Override
     protected String getDataPath() {
-        return "data/orders.json"; // Path to store orders JSON
+        return "src/main/java/com/example/data/orders.json"; // Path to store orders JSON
     }
 
     @Override
@@ -42,6 +42,6 @@ public class OrderRepository extends MainRepository<Order> {
     public void deleteOrderById(UUID orderId) {
         List<Order> orders = findAll();
         orders.removeIf(order -> order.getId().equals(orderId));
-        saveAll(new ArrayList<>(orders)); // Save updated order list
+        saveAll(new ArrayList<>(orders));
     }
 }

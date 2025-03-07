@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.example.MiniProject1.MiniProject1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.101 s <<< FAILURE! - in com.example.MiniProject1.MiniProject1ApplicationTests
+com.example.MiniProject1.MiniProject1ApplicationTests.testDeleteProductFromCartEndPoint1  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<Product deleted from cart> but was:<Cart is empty>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers.lambda$string$4(ContentResultMatchers.java:148)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.MiniProject1.MiniProject1ApplicationTests.testDeleteProductFromCartEndPoint1(MiniProject1ApplicationTests.java:432)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
