@@ -28,7 +28,7 @@ public abstract class MainRepository<T> {
             if (!file.exists()) {
                 return new ArrayList<>();
             }
-            T[] array = objectMapper.readValue(file, getArrayType()); // Deserialize to array first
+            T[] array = objectMapper.readValue(file, getArrayType());
             return new ArrayList<>(Arrays.asList(array));
             // return objectMapper.readValue(file, new TypeReference<ArrayList<T>>(){});
         } catch (IOException e) {

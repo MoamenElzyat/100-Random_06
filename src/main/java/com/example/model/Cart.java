@@ -1,5 +1,6 @@
 package com.example.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
@@ -11,7 +12,9 @@ import java.util.UUID;
 
 @Component
 public class Cart {
+    @JsonProperty("id")
     private UUID id;
+    @JsonProperty("userId")
     private UUID userId;
     private List<Product> products;
 
@@ -26,7 +29,7 @@ public class Cart {
     public Cart(UUID id, UUID userId, List<Product> products) {
         this.id = id;
         this.userId = userId;
-        this.products = new ArrayList<>(products); // Defensive copy
+        this.products = new ArrayList<>(products);
     }
 
     public UUID getId() {

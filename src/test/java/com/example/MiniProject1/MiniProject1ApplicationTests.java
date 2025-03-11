@@ -440,8 +440,8 @@
  		Product testProduct=new Product(UUID.randomUUID(), "Test Product", 10.0);
  		addUser(testUser15);
  		addProduct(testProduct);
- 		 Cart cart = new Cart(UUID.randomUUID(), testUser15.getId(), new ArrayList<>(List.of(testProduct)));
- 		 addCart(cart);
+ 		// Cart cart = new Cart(UUID.randomUUID(), testUser15.getId(), new ArrayList<>(List.of(testProduct)));
+ 		// addCart(cart);
 
  		mockMvc.perform(MockMvcRequestBuilders.put("/user/deleteProductFromCart")
  				.param("userId", testUser15.getId().toString())
@@ -719,9 +719,9 @@
  				.andExpect(MockMvcResultMatchers.status().isOk())
  				.andExpect(MockMvcResultMatchers.content().json(objectMapper.writeValueAsString(order)))
  				.andReturn();
-// 		 String responseContent = result.getResponse().getContentAsString();
-// 		 Order responseOrder = objectMapper.readValue(responseContent, Order.class);
-// 		 assertEquals(order.getId(), responseOrder.getId(), "Order should be returned correctly From Endpoint");
+ 		// String responseContent = result.getResponse().getContentAsString();
+ 		// Order responseOrder = objectMapper.readValue(responseContent, Order.class);
+ 		// assertEquals(order.getId(), responseOrder.getId(), "Order should be returned correctly From Endpoint");
  	}
 
 

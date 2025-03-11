@@ -22,12 +22,12 @@ public class UserRepository extends MainRepository<User> {
     }
 
     public ArrayList<User> getUsers() {
-        return (findAll()); //
+        return (findAll());
     }
 
     public User getUserById(UUID userId) {
         List<User> users = findAll();
-        System.out.println("All users: " + users); // Debugging
+        System.out.println("All users: " + users);
         return users.stream()
                 .filter(user -> user.getId().equals(userId))
                 .findFirst()
@@ -84,13 +84,10 @@ public class UserRepository extends MainRepository<User> {
     public void save(User user) {
         List<User> users = getUsers();
 
-        // Remove old version of user if exists
         users.removeIf(existingUser -> existingUser.getId().equals(user.getId()));
 
-        // Add updated user
         users.add(user);
 
-        // Persist the updated list
         saveAll((ArrayList<User>) users);
     }
 

@@ -133,14 +133,23 @@ public class UserController {
         if (product == null) return ResponseEntity.ok("Product not found");
 
         Cart cart = cartService.getCartByUserId(userId);
-        if (cart == null) return ResponseEntity.ok("Cart not found");
+        if (cart == null || cart.getProducts().isEmpty()) {
+            return ResponseEntity.ok("Cart is empty");
+        }
 
-        cartService.deleteProductFromCart(userId, product);
+        if (!cart.getProducts().contains(product)) {
+            return ResponseEntity.ok("Product not found in cart");
+        }
 
-        cart = cartService.getCartByUserId(userId);
-        return cart.getProducts().isEmpty()
-                ? ResponseEntity.ok("Cart is empty")
-                : ResponseEntity.ok("Product deleted from cart");
+     //   boolean isLastProduct = cart.getProducts().size() == 1;
+
+        cartService.deleteProductFromCart(cart.getId(), product);
+
+//        if (isLastProduct) {
+//            return ResponseEntity.ok("Cart is empty");
+//        }
+
+        return ResponseEntity.ok("Product deleted from cart");
     }
 
     @DeleteMapping("/delete/{userId}")

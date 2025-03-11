@@ -101,10 +101,11 @@ public class CartService extends MainService<Cart> {
         }
 
         cartRepository.addCart(cart);
-        Cart savedCart = cartRepository.getCartByUserId(cart.getUserId()); // ✅ تأكد من أن العربة محفوظة
-        System.out.println("Cart after saving: " + savedCart); // ✅ تصحيح الأخطاء
+        Cart savedCart = cartRepository.getCartByUserId(cart.getUserId());
+        System.out.println("Cart after saving: " + savedCart);
 
         return savedCart;
+
     }
 
     public static void main(String[] args) {

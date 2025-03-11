@@ -57,11 +57,9 @@ public class UserService extends MainService<User> {
         if (user == null || user.getName() == null || user.getName().isBlank()) {
             throw new IllegalArgumentException("User name cannot be null or empty");
         }
-
         if (user.getId() == null) {
             user.setId(UUID.randomUUID());
         }
-
         boolean userExists = userRepository.getUsers().stream()
                 .anyMatch(existingUser -> existingUser.getId().equals(user.getId()));
 
@@ -69,13 +67,11 @@ public class UserService extends MainService<User> {
             return null;
         }
 
-//        User addedUser = userRepository.addUser(user);
-//
-//        if (cartRepository.getCartByUserId(user.getId()) == null) {
-//            cartRepository.addCart(new Cart(UUID.randomUUID(), user.getId(), new ArrayList<>()));
-//        }
-
-        return userRepository.addUser(user);
+        User addedUser = userRepository.addUser(user);
+        if (cartService.getCartByUserId(user.getId()) == null) {
+            cartService.addCart(new Cart(UUID.randomUUID(), user.getId(), new ArrayList<>()));
+        }
+        return addedUser;
     }
 
     @Override
@@ -93,7 +89,7 @@ public class UserService extends MainService<User> {
 
         Cart cart = cartService.getCartByUserId(userId);
         if (cart != null) {
-            cartRepository.deleteCartById(cart.getId());  // Ensure the cart is removed
+            cartRepository.deleteCartById(cart.getId());  //  delete cart
         }
 
         userRepository.deleteUserById(userId);
@@ -101,7 +97,7 @@ public class UserService extends MainService<User> {
 
     public List<Order> getOrdersByUserId(UUID userId) {
         User user = userRepository.getUserById(userId);
-        return (user != null) ? new ArrayList<>(user.getOrders()) : new ArrayList<>(); // ✅ Safe return
+        return (user != null) ? new ArrayList<>(user.getOrders()) : new ArrayList<>();
     }
 
 
@@ -147,7 +143,7 @@ public class UserService extends MainService<User> {
 
         userRepository.save(user);
 
-        System.out.println("After removal, user orders: " + user.getOrders()); // Debugging
+        System.out.println("After removal, user orders: " + user.getOrders());
     }
 
     public void emptyCart(UUID userId) {
@@ -166,8 +162,8 @@ public class UserService extends MainService<User> {
 
         for (int i = 0; i < carts.size(); i++) {
             if (carts.get(i).getId().equals(cart.getId())) {
-                carts.set(i, cart); // Update existing cart
-                cartRepository.saveAll(new ArrayList<>(carts)); // Save updated list
+                carts.set(i, cart);
+                cartRepository.saveAll(new ArrayList<>(carts));
                 return;
             }
         }
@@ -179,7 +175,7 @@ public class UserService extends MainService<User> {
 
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getId().equals(user.getId())) {
-                users.set(i, user); // Update existing user
+                users.set(i, user);
                 userExists = true;
                 break;
             }

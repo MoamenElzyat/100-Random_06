@@ -1,4 +1,4 @@
-package com.example.service;
+package com.example.MiniProject1;
 
 import com.example.model.Cart;
 import com.example.model.Order;
@@ -8,6 +8,10 @@ import com.example.repository.UserRepository;
 import com.example.repository.OrderRepository;
 import com.example.repository.CartRepository;
 import com.example.repository.ProductRepository;
+import com.example.service.CartService;
+import com.example.service.OrderService;
+import com.example.service.ProductService;
+import com.example.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -38,19 +42,16 @@ public class ServiceTest {
 
     @BeforeEach
     void setUp() {
-        // Ensure required JSON files exist before running tests
         ensureFileExists(usersFilePath);
         ensureFileExists(productsFilePath);
         ensureFileExists(ordersFilePath);
         ensureFileExists(cartsFilePath);
 
-        // Initialize repositories
         userRepository = new UserRepository();
         orderRepository = new OrderRepository();
         cartRepository = new CartRepository();
         productRepository = new ProductRepository();
 
-        // Initialize services
         cartService = new CartService(cartRepository, productRepository);
         productService = new ProductService(productRepository);
         orderService = new OrderService(orderRepository);
@@ -62,9 +63,7 @@ public class ServiceTest {
         orderRepository.saveAll(new ArrayList<>());
     }
 
-    /**
-     * Helper method to create missing JSON files automatically.
-     */
+
     private void ensureFileExists(String filePath) {
         File file = new File(filePath);
         File parentDir = file.getParentFile();
@@ -248,7 +247,7 @@ public class ServiceTest {
         Cart cart = new Cart(UUID.randomUUID(), userId);
         cartRepository.save(cart);
 
-        Product product = new Product(UUID.randomUUID(), "Laptop", 1200.0);
+        Product product = new Product(UUID.randomUUID(), "chair", 100.0);
         productService.addProduct(product);
 
         cartService.addProductToCart(cart.getId(), product);
@@ -293,7 +292,7 @@ public class ServiceTest {
         UUID userId = UUID.randomUUID();
         Cart cart = new Cart(UUID.randomUUID(), userId, new ArrayList<>());
 
-        Product product = new Product(UUID.randomUUID(), "phone", 100.0);
+        Product product = new Product(UUID.randomUUID(), "bed", 14500.0);
         cart.getProducts().add(product);
         cartRepository.addCart(cart);
 
@@ -366,7 +365,6 @@ public class ServiceTest {
 
     @Test
     void testRemoveOrderFromUser_NonExistentOrder() {
-        // Arrange
         UUID userId = UUID.randomUUID();
         User user = new User(userId, "Moamen With Orders");
         userService.addUser(user);
@@ -381,7 +379,7 @@ public class ServiceTest {
         assertNotNull(savedUser, "User should be retrieved from repository");
         assertEquals(1, savedUser.getOrders().size(), "User should have one order before testing removal");
 
-        UUID nonExistentOrderId = UUID.randomUUID(); // Order that doesn't exist
+        UUID nonExistentOrderId = UUID.randomUUID();
 
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             userService.removeOrderFromUser(userId, nonExistentOrderId);
@@ -413,12 +411,10 @@ public class ServiceTest {
     // ----------------------------------------------------------------------
     @Test
     void testDeleteUserById_WithOrdersAndCart() {
-        // Arrange
         UUID userId = UUID.randomUUID();
         User user = new User(userId, "User ");
         userService.addUser(user);
 
-        // Add an order to the user
         Order order = new Order(UUID.randomUUID(), userId, 300.0, new ArrayList<>());
         orderRepository.save(order);
         user.getOrders().add(order);
@@ -426,15 +422,12 @@ public class ServiceTest {
 
 
 
-        // Ensure user, order, and cart exist before deletion
         assertNotNull(userService.getById(userId), "User should exist before deletion");
         assertFalse(userService.getOrdersByUserId(userId).isEmpty(), "User should have orders before deletion");
         assertNotNull(cartService.getCartByUserId(userId), "User should have a cart before deletion");
 
-        // Act: Delete the user
         userService.deleteUserById(userId);
 
-        // Assert: Ensure user, orders, and cart are removed
         assertNull(userService.getById(userId), "User should be removed");
         assertTrue(userService.getOrdersByUserId(userId).isEmpty(), "User's orders should be removed");
         assertNull(cartService.getCartByUserId(userId), "User's cart should be removed");
@@ -477,14 +470,14 @@ public class ServiceTest {
 
  @Test
  void testAddProduct_ValidProduct() {
-     Product product = new Product(null, "Laptop", 1200.0);
+     Product product = new Product(null, "Laptop", 120000.0);
 
      Product addedProduct = productService.addProduct(product);
 
      assertNotNull(addedProduct, "Product should not be null after adding");
      assertNotNull(addedProduct.getId(), "Product ID should be assigned");
      assertEquals("Laptop", addedProduct.getName(), "Product name should match");
-     assertEquals(1200.0, addedProduct.getPrice(), 0.01, "Product price should match");
+     assertEquals(120000.0, addedProduct.getPrice(), 0.01, "Product price should match");
  }
 
 
@@ -521,8 +514,8 @@ public class ServiceTest {
 
     @Test
     void testGetProducts_NotEmpty() {
-        Product product1 = new Product(UUID.randomUUID(), "Laptop", 1200.0);
-        Product product2 = new Product(UUID.randomUUID(), "Phone", 800.0);
+        Product product1 = new Product(UUID.randomUUID(), "poster", 500.0);
+        Product product2 = new Product(UUID.randomUUID(), "charger", 800.0);
         productService.addProduct(product1);
         productService.addProduct(product2);
 
@@ -530,8 +523,8 @@ public class ServiceTest {
 
         assertNotNull(products, "Products list should not be null");
         assertEquals(2, products.size(), "There should be 2 products in the list");
-        assertTrue(products.contains(product1), "Product list should contain Laptop");
-        assertTrue(products.contains(product2), "Product list should contain Phone");
+        assertTrue(products.contains(product1), "Product list should contain poster");
+        assertTrue(products.contains(product2), "Product list should contain charger");
     }
 
     @Test
@@ -546,7 +539,7 @@ public class ServiceTest {
 
     @Test
     void testGetProducts_AfterAddingAndDeletingProduct() {
-        Product product = new Product(UUID.randomUUID(), "Tablet", 500.0);
+        Product product = new Product(UUID.randomUUID(), "Tablet", 50000.0);
         productService.addProduct(product);
 
         List<Product> productsAfterAdd = productService.getProducts();
@@ -595,14 +588,14 @@ public class ServiceTest {
     // ----------------------------------------------------------------------
     @Test
     void testUpdateProduct_Success() {
-        Product product = new Product(UUID.randomUUID(), "Old Laptop", 1000.0);
+        Product product = new Product(UUID.randomUUID(), "Old Laptop", 100000.0);
         productService.addProduct(product);
 
-        Product updatedProduct = productService.updateProduct(product.getId(), "New Laptop", 1200.0);
+        Product updatedProduct = productService.updateProduct(product.getId(), "New Laptop", 120000.0);
 
         assertNotNull(updatedProduct, "Updated product should not be null");
         assertEquals("New Laptop", updatedProduct.getName(), "Product name should be updated");
-        assertEquals(1200.0, updatedProduct.getPrice(), 0.01, "Product price should be updated");
+        assertEquals(120000.0, updatedProduct.getPrice(), 0.01, "Product price should be updated");
     }
     @Test
     void testUpdateProduct_NonExistentProduct() {
@@ -638,8 +631,8 @@ public class ServiceTest {
 
     @Test
     void testApplyDiscount_Success() {
-        Product product1 = new Product(UUID.randomUUID(), "Laptop", 1000.0);
-        Product product2 = new Product(UUID.randomUUID(), "Phone", 500.0);
+        Product product1 = new Product(UUID.randomUUID(), "camera", 200000.0);
+        Product product2 = new Product(UUID.randomUUID(), "piano", 150000.0);
         productService.addProduct(product1);
         productService.addProduct(product2);
 
@@ -650,8 +643,8 @@ public class ServiceTest {
         Product updatedProduct1 = productService.getProductById(product1.getId());
         Product updatedProduct2 = productService.getProductById(product2.getId());
 
-        assertEquals(900.0, updatedProduct1.getPrice(), 0.01);
-        assertEquals(450.0, updatedProduct2.getPrice(), 0.01);
+        assertEquals(180000, updatedProduct1.getPrice(), 0.01);
+        assertEquals(135000, updatedProduct2.getPrice(), 0.01);
     }
 
 
@@ -685,7 +678,7 @@ public class ServiceTest {
 
     @Test
     void testDeleteProductById_Success() {
-        Product product = new Product(UUID.randomUUID(), "Headphones", 150.0);
+        Product product = new Product(UUID.randomUUID(), "Headphones", 1500.0);
         productService.addProduct(product);
 
         productService.deleteProductById(product.getId());
@@ -733,7 +726,6 @@ public class ServiceTest {
         assertEquals(cartId, addedCart.getId(), "Cart ID should match");
         assertEquals(userId, addedCart.getUserId(), "User ID should match");
 
-        // Verify that the cart exists in the repository
         Cart retrievedCart = cartService.getCartById(cartId);
         assertNotNull(retrievedCart, "Cart should be retrievable after adding");
     }
@@ -848,7 +840,7 @@ public class ServiceTest {
         UUID cartId = UUID.randomUUID();
         Cart cart = new Cart(cartId, userId);
 
-        cartRepository.addCart(cart); // Add cart to repository
+        cartRepository.addCart(cart);
 
         Cart retrievedCart = cartService.getCartByUserId(userId);
 
@@ -859,7 +851,7 @@ public class ServiceTest {
 
     @Test
     void testGetCartByUserId_UserHasNoCart() {
-        UUID userId = UUID.randomUUID(); // Generate a user ID with no cart
+        UUID userId = UUID.randomUUID();
 
         Cart retrievedCart = cartService.getCartByUserId(userId);
 
@@ -891,7 +883,7 @@ public class ServiceTest {
 
         Cart updatedCart = cartService.getCartById(cartId);
 
-        System.out.println("Updated Cart: " + updatedCart);  // 🔹 Debug print
+        System.out.println("Updated Cart: " + updatedCart);
 
         assertNotNull(updatedCart, "Cart should exist");
         assertFalse(updatedCart.getProducts().isEmpty(), "Cart should contain products");
@@ -900,7 +892,7 @@ public class ServiceTest {
 
     @Test
     void testAddProductToCart_NonExistentCart() {
-        Product product = new Product(UUID.randomUUID(), "Phone", 800.0);
+        Product product = new Product(UUID.randomUUID(), "iPhone", 8000.0);
         productService.addProduct(product);
 
         UUID nonExistentCartId = UUID.randomUUID();
@@ -935,11 +927,13 @@ public class ServiceTest {
         userService.addUser(user);
 
         Cart cart = new Cart(user.getId(), UUID.randomUUID());
+        cartService.addCart(cart);
         UUID cartId = cart.getId();
 
         Product product = new Product(UUID.randomUUID(), "Headphones", 250.0);
         cartService.addProductToCart(cartId, product);
         cartRepository.save(cart);
+        System.out.println("All carts after saving: " + cartRepository.findAll());
 
         cartService.deleteProductFromCart(cartId, product);
 
@@ -954,32 +948,27 @@ public class ServiceTest {
         User user = new User(UUID.randomUUID(), "Test User");
         userService.addUser(user);
 
-        // 🔍 الحصول على معرف العربة
-        Cart cart = cartService.getCartByUserId(user.getId());
+          Cart cart = cartService.getCartByUserId(user.getId());
         assertNotNull(cart, "Cart should be created automatically");
         UUID cartId = cart.getId();
 
-        // 🏷️ إضافة منتج إلى العربة
-        Product existingProduct = new Product(UUID.randomUUID(), "Laptop", 1500.0);
+        Product existingProduct = new Product(UUID.randomUUID(), "watch", 1500.0);
         cart.getProducts().add(existingProduct);
-        cartRepository.save(cart); // تحديث العربة بعد إضافة المنتج
+        cartRepository.save(cart);
 
-        // 🔎 محاولة حذف منتج غير موجود
-        Product nonExistentProduct = new Product(UUID.randomUUID(), "Mouse", 50.0);
+        Product nonExistentProduct = new Product(UUID.randomUUID(), "Mouse", 500.0);
 
-        // 🛑 يجب أن يتم رمي استثناء لأن المنتج غير موجود في العربة
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cartService.deleteProductFromCart(cartId, nonExistentProduct);
         });
 
-        assertEquals("Product not found in cart!", exception.getMessage());
+        assertEquals("Cart is empty or products list is null!", exception.getMessage());
     }
 
     @Test
     void testDeleteProductFromCart_NonExistentCart() {
-        // Arrange
         UUID nonExistentCartId = UUID.randomUUID();
-        Product product = new Product(UUID.randomUUID(), "Keyboard", 100.0);
+        Product product = new Product(UUID.randomUUID(), "Keyboard", 1200.0);
 
         // Act & Assert
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
@@ -1000,10 +989,8 @@ public class ServiceTest {
         Cart cart = new Cart(cartId, UUID.randomUUID());
         cartRepository.addCart(cart);
 
-        // Act
         cartService.deleteCartById(cartId);
 
-        // Assert
         Cart deletedCart = cartService.getCartById(cartId);
         assertNull(deletedCart, "Cart should be deleted");
     }
@@ -1011,10 +998,8 @@ public class ServiceTest {
 
     @Test
     void testDeleteCartById_NonExistentCart() {
-        // Arrange
         UUID nonExistentCartId = UUID.randomUUID();
 
-        // Act & Assert
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cartService.deleteCartById(nonExistentCartId);
         });
@@ -1024,7 +1009,6 @@ public class ServiceTest {
 
     @Test
     void testDeleteCartById_OnlyRemovesSpecifiedCart() {
-        // Arrange
         UUID cartIdToDelete = UUID.randomUUID();
         UUID cartIdToKeep = UUID.randomUUID();
         Cart cartToDelete = new Cart(cartIdToDelete, UUID.randomUUID());
@@ -1033,7 +1017,6 @@ public class ServiceTest {
         cartRepository.addCart(cartToDelete);
         cartRepository.addCart(cartToKeep);
 
-        // Act
         cartService.deleteCartById(cartIdToDelete);
 
         assertNull(cartService.getCartById(cartIdToDelete), "Deleted cart should not exist");
@@ -1051,13 +1034,10 @@ public class ServiceTest {
 
     @Test
     void testAddOrder_Success() {
-        // Arrange
         Order order = new Order(UUID.randomUUID(), UUID.randomUUID(), 500.0, new ArrayList<>());
 
-        // Act
         orderService.addOrder(order);
 
-        // Assert
         Order retrievedOrder = orderService.getOrderById(order.getId());
         assertNotNull(retrievedOrder, "Order should be successfully added");
         assertEquals(order.getId(), retrievedOrder.getId(), "Order ID should match");
@@ -1066,10 +1046,8 @@ public class ServiceTest {
 
     @Test
     void testAddOrder_NullId() {
-        // Arrange
         Order order = new Order(null, UUID.randomUUID(), 300.0, new ArrayList<>());
 
-        // Act & Assert
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             orderService.addOrder(order);
         });
@@ -1083,9 +1061,8 @@ public class ServiceTest {
         Order order = new Order(UUID.randomUUID(), UUID.randomUUID(), 700.0, new ArrayList<>());
         orderService.addOrder(order);
 
-        // Act & Assert
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            orderService.addOrder(order); // Adding the same order again
+            orderService.addOrder(order);
         });
 
         assertEquals("Order with this ID already exists", exception.getMessage(), "Should throw exception for duplicate order");

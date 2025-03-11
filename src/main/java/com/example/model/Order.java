@@ -1,5 +1,6 @@
 package com.example.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
@@ -11,8 +12,11 @@ import java.util.UUID;
 
 @Component
 public class Order {
+    @JsonProperty("id")
     private UUID id;
+    @JsonProperty("userId")
     private UUID userId;
+    @JsonProperty("totalPrice")
     private double totalPrice;
     private List<Product> products;
 

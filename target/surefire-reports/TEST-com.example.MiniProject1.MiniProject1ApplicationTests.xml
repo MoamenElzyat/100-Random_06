@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.MiniProject1.MiniProject1ApplicationTests" time="1.101" tests="27" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.MiniProject1.MiniProject1ApplicationTests" time="1.137" tests="27" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/test-classes:/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/classes:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/3.4.2/spring-boot-starter-data-rest-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-webmvc/4.4.2/spring-data-rest-webmvc-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-core/4.4.2/spring-data-rest-core-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/hateoas/spring-hateoas/2.4.1/spring-hateoas-2.4.1.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/Asmem/.m2/repository/org/atteo/evo-inflector/1.3/evo-inflector-1.3.jar:/Users/Asmem/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.2/spring-boot-starter-web-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Asmem/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/Asmem/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/Asmem/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.2/spring-boot-starter-json-3.4.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.2/spring-boot-starter-tomcat-3.4.2.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/Asmem/.m2/repository/org/springframework/spring-web/6.2.2/spring-web-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/Asmem/.m2/repository/org/springframework/spring-webmvc/6.2.2/spring-webmvc-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/Asmem/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-devtools/3.4.2/spring-boot-devtools-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/Asmem/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/Asmem/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/Asmem/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/Asmem/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/Asmem/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/Asmem/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/Asmem/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/Asmem/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/Asmem/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/Asmem/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/Asmem/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/Asmem/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/Asmem/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/Asmem/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/Asmem/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/Asmem/.m2/repository/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar:"/>
+    <property name="java.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/test-classes:/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/classes:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/3.4.2/spring-boot-starter-data-rest-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-webmvc/4.4.2/spring-data-rest-webmvc-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-core/4.4.2/spring-data-rest-core-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/hateoas/spring-hateoas/2.4.1/spring-hateoas-2.4.1.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/Asmem/.m2/repository/org/atteo/evo-inflector/1.3/evo-inflector-1.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.2/spring-boot-starter-web-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Asmem/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/Asmem/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/Asmem/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.2/spring-boot-starter-json-3.4.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.2/spring-boot-starter-tomcat-3.4.2.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/Asmem/.m2/repository/org/springframework/spring-web/6.2.2/spring-web-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/Asmem/.m2/repository/org/springframework/spring-webmvc/6.2.2/spring-webmvc-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/Asmem/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-devtools/3.4.2/spring-boot-devtools-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/Asmem/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/Asmem/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/Asmem/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/Asmem/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/Asmem/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/Asmem/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/Asmem/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/Asmem/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/Asmem/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/Asmem/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/Asmem/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/Asmem/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/Asmem/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/Asmem/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/Asmem/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/Asmem/.m2/repository/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar:/Users/Asmem/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/Asmem/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Asmem/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/Asmem/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -14,10 +14,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="DE"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire/surefirebooter-20250307210437115_3.jar /Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire 2025-03-07T21-04-37_034-jvmRun1 surefire-20250307210437115_1tmp surefire_0-20250307210437115_2tmp"/>
+    <property name="sun.java.command" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire/surefirebooter-20250311065457894_3.jar /Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire 2025-03-11T06-54-57_804-jvmRun1 surefire-20250311065457894_1tmp surefire_0-20250311065457894_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/test-classes:/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/classes:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/3.4.2/spring-boot-starter-data-rest-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-webmvc/4.4.2/spring-data-rest-webmvc-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-core/4.4.2/spring-data-rest-core-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/hateoas/spring-hateoas/2.4.1/spring-hateoas-2.4.1.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/Asmem/.m2/repository/org/atteo/evo-inflector/1.3/evo-inflector-1.3.jar:/Users/Asmem/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.2/spring-boot-starter-web-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Asmem/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/Asmem/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/Asmem/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.2/spring-boot-starter-json-3.4.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.2/spring-boot-starter-tomcat-3.4.2.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/Asmem/.m2/repository/org/springframework/spring-web/6.2.2/spring-web-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/Asmem/.m2/repository/org/springframework/spring-webmvc/6.2.2/spring-webmvc-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/Asmem/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-devtools/3.4.2/spring-boot-devtools-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/Asmem/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/Asmem/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/Asmem/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/Asmem/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/Asmem/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/Asmem/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/Asmem/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/Asmem/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/Asmem/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/Asmem/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/Asmem/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/Asmem/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/Asmem/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/Asmem/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/Asmem/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/Asmem/.m2/repository/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/test-classes:/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/classes:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/3.4.2/spring-boot-starter-data-rest-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-webmvc/4.4.2/spring-data-rest-webmvc-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-core/4.4.2/spring-data-rest-core-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/hateoas/spring-hateoas/2.4.1/spring-hateoas-2.4.1.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/Asmem/.m2/repository/org/atteo/evo-inflector/1.3/evo-inflector-1.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.2/spring-boot-starter-web-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Asmem/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/Asmem/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/Asmem/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.2/spring-boot-starter-json-3.4.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.2/spring-boot-starter-tomcat-3.4.2.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/Asmem/.m2/repository/org/springframework/spring-web/6.2.2/spring-web-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/Asmem/.m2/repository/org/springframework/spring-webmvc/6.2.2/spring-webmvc-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/Asmem/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-devtools/3.4.2/spring-boot-devtools-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/Asmem/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/Asmem/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/Asmem/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/Asmem/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/Asmem/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/Asmem/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/Asmem/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/Asmem/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/Asmem/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/Asmem/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/Asmem/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/Asmem/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/Asmem/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/Asmem/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/Asmem/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/Asmem/.m2/repository/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar:/Users/Asmem/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/Asmem/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Asmem/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/Asmem/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/Asmem"/>
     <property name="user.language" value="en"/>
@@ -33,7 +33,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire/surefirebooter-20250307210437115_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire/surefirebooter-20250311065457894_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -53,7 +53,7 @@
     <property name="user.dir" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="59412"/>
+    <property name="PID" value="14491"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/Asmem/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -66,10 +66,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[MiniProject1] "/>
   </properties>
-  <testcase name="testGetUsersEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.224">
-    <system-out><![CDATA[21:04:37.490 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.MiniProject1.MiniProject1ApplicationTests]: MiniProject1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:04:37.544 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.MiniProject1.MiniProject1Application for test class com.example.MiniProject1.MiniProject1ApplicationTests
-21:04:37.576 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="testGetUsersEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.236">
+    <system-out><![CDATA[06:54:58.332 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.MiniProject1.MiniProject1ApplicationTests]: MiniProject1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+06:54:58.390 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.MiniProject1.MiniProject1Application for test class com.example.MiniProject1.MiniProject1ApplicationTests
+06:54:58.426 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -80,188 +80,144 @@
 
  :: Spring Boot ::                (v3.4.2)
 
-2025-03-07T21:04:37.696+02:00  INFO 59412 --- [MiniProject1] [           main] c.e.M.MiniProject1ApplicationTests       : Starting MiniProject1ApplicationTests using Java 23.0.2 with PID 59412 (started by Asmem in /Users/Asmem/Desktop/Scalabilty Learn/100-Random_06)
-2025-03-07T21:04:37.697+02:00  INFO 59412 --- [MiniProject1] [           main] c.e.M.MiniProject1ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
-2025-03-07T21:04:38.135+02:00  INFO 59412 --- [MiniProject1] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-03-07T21:04:38.135+02:00  INFO 59412 --- [MiniProject1] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-03-07T21:04:38.136+02:00  INFO 59412 --- [MiniProject1] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-03-07T21:04:38.146+02:00  INFO 59412 --- [MiniProject1] [           main] c.e.M.MiniProject1ApplicationTests       : Started MiniProject1ApplicationTests in 0.573 seconds (process running for 0.984)
+2025-03-11T06:54:58.548+02:00  INFO 14491 --- [MiniProject1] [           main] c.e.M.MiniProject1ApplicationTests       : Starting MiniProject1ApplicationTests using Java 23.0.2 with PID 14491 (started by Asmem in /Users/Asmem/Desktop/Scalabilty Learn/100-Random_06)
+2025-03-11T06:54:58.548+02:00  INFO 14491 --- [MiniProject1] [           main] c.e.M.MiniProject1ApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T06:54:58.999+02:00  INFO 14491 --- [MiniProject1] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-11T06:54:58.999+02:00  INFO 14491 --- [MiniProject1] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-11T06:54:59.000+02:00  INFO 14491 --- [MiniProject1] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-11T06:54:59.009+02:00  INFO 14491 --- [MiniProject1] [           main] c.e.M.MiniProject1ApplicationTests       : Started MiniProject1ApplicationTests in 0.588 seconds (process running for 1.056)
 ]]></system-out>
   </testcase>
-  <testcase name="testGetCartByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.016">
-    <system-out><![CDATA[All Carts: [{"id":"83180b4e-6217-4624-bbbc-f4180ac31e64","userId":"17bf5eed-8b4b-4e49-a9f0-e4779e77b1fa","products":[]}]
+  <testcase name="testGetCartByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.015">
+    <system-out><![CDATA[All Carts: [{"products":[],"id":"3d35178a-3838-44be-86d1-d14da94109a8","userId":"afa940f6-40c9-4787-9e77-c33d0016278d"}]
 ]]></system-out>
   </testcase>
-  <testcase name="testEmptyCartEndpoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.011">
-    <system-out><![CDATA[All users: [{"id":"488b17fd-4282-43ef-a439-dfa69f84cd43","name":"Test User13","orders":[]}]
-Before deletion: [{"id":"f64f3a82-a2a5-4084-bb62-82182fadbbfa","userId":"488b17fd-4282-43ef-a439-dfa69f84cd43","products":[{"id":"338cedc3-902e-42a1-9c07-781a94087a0e","name":"Test Product","price":100.0}]}]
-Cart deleted: f64f3a82-a2a5-4084-bb62-82182fadbbfa
+  <testcase name="testEmptyCartEndpoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.009">
+    <system-out><![CDATA[All users: [{"id":"35e5a01d-7d8c-4bc0-ab62-4c9e782011ea","name":"Test User13","orders":[]}]
+Before deletion: [{"products":[{"id":"c45b649d-cfde-4608-95da-857a0c765d9b","name":"Test Product","price":100.0}],"id":"02889f01-9dc7-45c7-a678-b853aef31c96","userId":"35e5a01d-7d8c-4bc0-ab62-4c9e782011ea"}]
+Cart deleted: 02889f01-9dc7-45c7-a678-b853aef31c96
 Saving: []
 After deletion: []
-Saved carts: [{"id":"f64f3a82-a2a5-4084-bb62-82182fadbbfa","userId":"488b17fd-4282-43ef-a439-dfa69f84cd43","products":[]}]
-✅ New cart created for user: 488b17fd-4282-43ef-a439-dfa69f84cd43
+New cart created for user: 35e5a01d-7d8c-4bc0-ab62-4c9e782011ea
+Saved carts: [{"products":[],"id":"02889f01-9dc7-45c7-a678-b853aef31c96","userId":"35e5a01d-7d8c-4bc0-ab62-4c9e782011ea"}]
 ]]></system-out>
   </testcase>
-  <testcase name="testAddOrderEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.009">
-    <system-out><![CDATA[Saving: [{"id":"5ac7d0b0-1447-4bcd-a77e-a3c2ee48301d","userId":"74f3dbef-890d-4128-8e2d-1fa627b35222","totalPrice":10.0,"products":[]}]
+  <testcase name="testAddOrderEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.012">
+    <system-out><![CDATA[Saving: [{"products":[],"id":"8600f521-0389-476d-868a-04d8da7b38cc","userId":"2998959a-0870-4a62-aee0-32d8711e91c1","totalPrice":10.0}]
 ]]></system-out>
   </testcase>
   <testcase name="testApplyDiscountEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.006">
-    <system-out><![CDATA[Saving: [{"id":"5ec80378-1f93-4cc2-92b3-d29f00689ddd","name":"Test Product","price":9.0}]
+    <system-out><![CDATA[Saving: [{"id":"13586675-406f-4ec2-94c5-d8d6f3bcc7d0","name":"Test Product","price":9.0}]
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteOrderByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.002">
+  <testcase name="testDeleteOrderByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
     <system-out><![CDATA[Saving: []
 ]]></system-out>
   </testcase>
-  <testcase name="testGetOrdersByUserIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.006">
-    <system-out><![CDATA[All users: [{"id":"0385b866-9db0-4c04-b752-5aef740947cd","name":"Test User10","orders":[{"id":"3e37ae50-6915-474f-8f27-8a1e5d946afa","userId":"0385b866-9db0-4c04-b752-5aef740947cd","totalPrice":10.0,"products":[{"id":"d3f11439-1da8-4cf5-b1f5-d7e372c1793d","name":"Test Product","price":10.0}]}]}]
+  <testcase name="testGetOrdersByUserIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.007">
+    <system-out><![CDATA[All users: [{"id":"2a1ded8e-e8e2-4258-9eaf-15ac70b685a4","name":"Test User10","orders":[{"products":[{"id":"ef3bbb2e-cf04-49b1-b571-6dcb19c82f09","name":"Test Product","price":10.0}],"id":"31ab0201-5bed-4b51-be8d-aa8166d137a4","userId":"2a1ded8e-e8e2-4258-9eaf-15ac70b685a4","totalPrice":10.0}]}]
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteProductByIdEndPoint1" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
+  <testcase name="testDeleteProductByIdEndPoint1" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.002">
     <system-out><![CDATA[Saving: []
 ]]></system-out>
   </testcase>
-  <testcase name="testAddUserEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.004">
-    <system-out><![CDATA[Saving: [{"id":"7da6fd56-caf1-46c7-bfbf-ee53aecfe878","name":"Test User3","orders":[]}]
-Saved carts: [{"id":"1020e945-c1b4-4792-8557-926e62bbb87d","userId":"7da6fd56-caf1-46c7-bfbf-ee53aecfe878","products":[]}]
-✅ New cart created for user: 7da6fd56-caf1-46c7-bfbf-ee53aecfe878
+  <testcase name="testAddUserEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.005">
+    <system-out><![CDATA[Saving: [{"id":"0b23a8f8-99f2-47ae-adf4-d1538f827e61","name":"Test User3","orders":[]}]
+New cart created for user: 0b23a8f8-99f2-47ae-adf4-d1538f827e61
+Saved carts: [{"products":[],"id":"e82579cf-ede7-4513-be16-14d32b595ebb","userId":"0b23a8f8-99f2-47ae-adf4-d1538f827e61"}]
+Cart after saving: {"products":[],"id":"e82579cf-ede7-4513-be16-14d32b595ebb","userId":"0b23a8f8-99f2-47ae-adf4-d1538f827e61"}
 ]]></system-out>
   </testcase>
   <testcase name="testGetCartsEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003"/>
   <testcase name="testAddOrderToUserEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.009">
-    <system-out><![CDATA[All users: [{"id":"0be6e0ed-7990-4010-ad5c-68dcda8ee97c","name":"Test User11","orders":[]}]
-All users: [{"id":"0be6e0ed-7990-4010-ad5c-68dcda8ee97c","name":"Test User11","orders":[]}]
-Saving: [{"id":"6b9381af-5b5a-4db8-96fd-8d0d373dbcd3","userId":"0be6e0ed-7990-4010-ad5c-68dcda8ee97c","totalPrice":10.0,"products":[{"id":"3a82ebea-213f-444f-a225-0d308aa2d970","name":"Test Product","price":10.0}]}]
-Saving: [{"id":"0be6e0ed-7990-4010-ad5c-68dcda8ee97c","name":"Test User11","orders":[{"id":"6b9381af-5b5a-4db8-96fd-8d0d373dbcd3","userId":"0be6e0ed-7990-4010-ad5c-68dcda8ee97c","totalPrice":10.0,"products":[{"id":"3a82ebea-213f-444f-a225-0d308aa2d970","name":"Test Product","price":10.0}]}]}]
-Before deletion: [{"id":"06320432-2cb3-4180-83be-c4e6e5a2f3a8","userId":"0be6e0ed-7990-4010-ad5c-68dcda8ee97c","products":[{"id":"3a82ebea-213f-444f-a225-0d308aa2d970","name":"Test Product","price":10.0}]}]
-Cart deleted: 06320432-2cb3-4180-83be-c4e6e5a2f3a8
+    <system-out><![CDATA[All users: [{"id":"e14b03b7-ba0a-4f08-9b3c-66e66a72791a","name":"Test User11","orders":[]}]
+All users: [{"id":"e14b03b7-ba0a-4f08-9b3c-66e66a72791a","name":"Test User11","orders":[]}]
+Saving: [{"products":[{"id":"656c4256-a76a-49d0-972b-22ea9204e3fe","name":"Test Product","price":10.0}],"id":"0edc390d-63d1-48bf-b68e-c6e711cf6b95","userId":"e14b03b7-ba0a-4f08-9b3c-66e66a72791a","totalPrice":10.0}]
+Saving: [{"id":"e14b03b7-ba0a-4f08-9b3c-66e66a72791a","name":"Test User11","orders":[{"products":[{"id":"656c4256-a76a-49d0-972b-22ea9204e3fe","name":"Test Product","price":10.0}],"id":"0edc390d-63d1-48bf-b68e-c6e711cf6b95","userId":"e14b03b7-ba0a-4f08-9b3c-66e66a72791a","totalPrice":10.0}]}]
+Before deletion: [{"products":[{"id":"656c4256-a76a-49d0-972b-22ea9204e3fe","name":"Test Product","price":10.0}],"id":"2442e155-ae9f-4ec5-bfeb-ea53e3b2f6ec","userId":"e14b03b7-ba0a-4f08-9b3c-66e66a72791a"}]
+Cart deleted: 2442e155-ae9f-4ec5-bfeb-ea53e3b2f6ec
 Saving: []
 After deletion: []
-Saved carts: [{"id":"06320432-2cb3-4180-83be-c4e6e5a2f3a8","userId":"0be6e0ed-7990-4010-ad5c-68dcda8ee97c","products":[]}]
-✅ New cart created for user: 0be6e0ed-7990-4010-ad5c-68dcda8ee97c
+New cart created for user: e14b03b7-ba0a-4f08-9b3c-66e66a72791a
+Saved carts: [{"products":[],"id":"2442e155-ae9f-4ec5-bfeb-ea53e3b2f6ec","userId":"e14b03b7-ba0a-4f08-9b3c-66e66a72791a"}]
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateProductEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.009">
+  <testcase name="testUpdateProductEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.007">
     <system-out><![CDATA[Received request body: {newName=UpdatedName, newPrice=20.0}
-Saving: [{"id":"c2b27df5-af5e-41bc-83d8-6acf7bda2e34","name":"UpdatedName","price":20.0}]
+Saving: [{"id":"0b23867e-7cc1-4fda-821d-4cd9da6f57f3","name":"UpdatedName","price":20.0}]
 ]]></system-out>
   </testcase>
   <testcase name="testRemoveOrderOfUserEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.006">
-    <system-out><![CDATA[All users: [{"id":"fa277173-2b3f-4453-a95a-3ed2a0cb32a6","name":"Test User12","orders":[{"id":"59e02d29-5068-4936-a730-9e0183d62bdb","userId":"fa277173-2b3f-4453-a95a-3ed2a0cb32a6","totalPrice":100.0,"products":[{"id":"c317cc8c-1733-402e-9b8f-a2969b3ac7f3","name":"Test Product","price":100.0}]}]}]
-All users: [{"id":"fa277173-2b3f-4453-a95a-3ed2a0cb32a6","name":"Test User12","orders":[{"id":"59e02d29-5068-4936-a730-9e0183d62bdb","userId":"fa277173-2b3f-4453-a95a-3ed2a0cb32a6","totalPrice":100.0,"products":[{"id":"c317cc8c-1733-402e-9b8f-a2969b3ac7f3","name":"Test Product","price":100.0}]}]}]
-Before removal, user orders: [{"id":"59e02d29-5068-4936-a730-9e0183d62bdb","userId":"fa277173-2b3f-4453-a95a-3ed2a0cb32a6","totalPrice":100.0,"products":[{"id":"c317cc8c-1733-402e-9b8f-a2969b3ac7f3","name":"Test Product","price":100.0}]}]
-Saving: [{"id":"fa277173-2b3f-4453-a95a-3ed2a0cb32a6","name":"Test User12","orders":[]}]
+    <system-out><![CDATA[All users: [{"id":"70668bee-a253-42d2-966f-59e80fcd4347","name":"Test User12","orders":[{"products":[{"id":"2e08d555-a2ef-4daf-b44f-d1059a63e572","name":"Test Product","price":100.0}],"id":"3485600a-205c-4d39-94c0-1f93e5c0a7b7","userId":"70668bee-a253-42d2-966f-59e80fcd4347","totalPrice":100.0}]}]
+All users: [{"id":"70668bee-a253-42d2-966f-59e80fcd4347","name":"Test User12","orders":[{"products":[{"id":"2e08d555-a2ef-4daf-b44f-d1059a63e572","name":"Test Product","price":100.0}],"id":"3485600a-205c-4d39-94c0-1f93e5c0a7b7","userId":"70668bee-a253-42d2-966f-59e80fcd4347","totalPrice":100.0}]}]
+Before removal, user orders: [{"products":[{"id":"2e08d555-a2ef-4daf-b44f-d1059a63e572","name":"Test Product","price":100.0}],"id":"3485600a-205c-4d39-94c0-1f93e5c0a7b7","userId":"70668bee-a253-42d2-966f-59e80fcd4347","totalPrice":100.0}]
+Saving: [{"id":"70668bee-a253-42d2-966f-59e80fcd4347","name":"Test User12","orders":[]}]
 After removal, user orders: []
 ]]></system-out>
   </testcase>
-  <testcase name="testGetProductByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003"/>
+  <testcase name="testGetProductByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.002"/>
   <testcase name="testGetProductsEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
-    <system-out><![CDATA[Retrieved products: [{"id":"e5af0c1e-2d8c-4b03-9692-0518d95bb479","name":"Test Product","price":10.0}]
+    <system-out><![CDATA[Retrieved products: [{"id":"9ec91635-1cbe-4841-aafd-6bf798fa007d","name":"Test Product","price":10.0}]
 ]]></system-out>
   </testcase>
-  <testcase name="testAddProductEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
-    <system-out><![CDATA[Saving: [{"id":"bafa1b26-38df-4b2a-926b-a50f1f4d68f0","name":"Test Product","price":10.0}]
+  <testcase name="testAddProductEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.004">
+    <system-out><![CDATA[Saving: [{"id":"b8bb3987-136c-4349-8b05-daba85651f7a","name":"Test Product","price":10.0}]
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteProductFromCartEndPoint1" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.007">
-    <failure message="Response content expected:&lt;Product deleted from cart&gt; but was:&lt;Cart is empty&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response content expected:<Product deleted from cart> but was:<Cart is empty>
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
-	at org.springframework.test.web.servlet.result.ContentResultMatchers.lambda$string$4(ContentResultMatchers.java:148)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
-	at com.example.MiniProject1.MiniProject1ApplicationTests.testDeleteProductFromCartEndPoint1(MiniProject1ApplicationTests.java:432)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-]]></failure>
-    <system-out><![CDATA[All users: [{"id":"d9c2a696-f72c-4140-8bdb-e0566ce1ddf3","name":"Test User15","orders":[]}]
-Saved carts: [{"id":"7fcfaf88-dcea-4445-8813-6336668eed07","userId":"d9c2a696-f72c-4140-8bdb-e0566ce1ddf3","products":[]}]
-✅ Product removed from cart successfully!
-
-MockHttpServletRequest:
-      HTTP Method = PUT
-      Request URI = /user/deleteProductFromCart
-       Parameters = {userId=[d9c2a696-f72c-4140-8bdb-e0566ce1ddf3], productId=[ca611e7f-5ee9-4db2-b6be-53997f29e695]}
-          Headers = []
-             Body = null
-    Session Attrs = {}
-
-Handler:
-             Type = com.example.controller.UserController
-           Method = com.example.controller.UserController#deleteProductFromCart(UUID, UUID)
-
-Async:
-    Async started = false
-     Async result = null
-
-Resolved Exception:
-             Type = null
-
-ModelAndView:
-        View name = null
-             View = null
-            Model = null
-
-FlashMap:
-       Attributes = null
-
-MockHttpServletResponse:
-           Status = 200
-    Error message = null
-          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"13"]
-     Content type = text/plain;charset=UTF-8
-             Body = Cart is empty
-    Forwarded URL = null
-   Redirected URL = null
-          Cookies = []
+  <testcase name="testDeleteProductFromCartEndPoint1" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.006">
+    <system-out><![CDATA[All users: [{"id":"acebfe8d-9e03-4571-8d55-2c9191479946","name":"Test User15","orders":[]}]
+Carts before Deleting product: [{"products":[{"id":"27b226e4-f18d-4df7-a216-bca19b12011d","name":"Test Product","price":10.0}],"id":"d08cf627-f08e-450a-b6e1-7d77a0d75a0d","userId":"acebfe8d-9e03-4571-8d55-2c9191479946"}]
+Looking for cart ID: d08cf627-f08e-450a-b6e1-7d77a0d75a0d
+Saved carts: [{"products":[],"id":"d08cf627-f08e-450a-b6e1-7d77a0d75a0d","userId":"acebfe8d-9e03-4571-8d55-2c9191479946"}]
+Carts after saving: [{"products":[],"id":"d08cf627-f08e-450a-b6e1-7d77a0d75a0d","userId":"acebfe8d-9e03-4571-8d55-2c9191479946"}]
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteProductFromCartEndPoint2" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.004">
-    <system-out><![CDATA[All users: [{"id":"00c51f0d-44e6-4735-bb92-4b22ae7f38ef","name":"Test User15","orders":[]}]
-Saved carts: [{"id":"a8db4925-a639-49b0-be56-bc6c9b52f081","userId":"00c51f0d-44e6-4735-bb92-4b22ae7f38ef","products":[]}]
-✅ Product removed from cart successfully!
+  <testcase name="testDeleteProductFromCartEndPoint2" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
+    <system-out><![CDATA[All users: [{"id":"704bdb0a-f11c-4a05-bac9-e61a08f6019e","name":"Test User15","orders":[]}]
 ]]></system-out>
   </testcase>
   <testcase name="testDeleteOrderByIdEndPoint2" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.002"/>
   <testcase name="testGetOrdersEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.002"/>
   <testcase name="testGetOrderByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003"/>
-  <testcase name="testAddProductToCartEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.006">
-    <system-out><![CDATA[All users: [{"id":"27a4b5ac-58f3-4978-922a-e866315fb5fb","name":"Test User14","orders":[]}]
-Saved carts: [{"id":"cf814347-1100-4a01-a970-5a7d818cb1af","userId":"27a4b5ac-58f3-4978-922a-e866315fb5fb","products":[]}]
-✅ New cart created for user: 27a4b5ac-58f3-4978-922a-e866315fb5fb
-Cart after saving: {"id":"cf814347-1100-4a01-a970-5a7d818cb1af","userId":"27a4b5ac-58f3-4978-922a-e866315fb5fb","products":[]}
+  <testcase name="testAddProductToCartEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.007">
+    <system-out><![CDATA[All users: [{"id":"cff28e2b-eae7-49f7-8608-05ced81af965","name":"Test User14","orders":[]}]
+New cart created for user: cff28e2b-eae7-49f7-8608-05ced81af965
+Saved carts: [{"products":[],"id":"62955832-b6f2-4097-8949-e64fad588dee","userId":"cff28e2b-eae7-49f7-8608-05ced81af965"}]
+Cart after saving: {"products":[],"id":"62955832-b6f2-4097-8949-e64fad588dee","userId":"cff28e2b-eae7-49f7-8608-05ced81af965"}
+Carts before adding product: [{"products":[],"id":"62955832-b6f2-4097-8949-e64fad588dee","userId":"cff28e2b-eae7-49f7-8608-05ced81af965"}]
+Looking for cart ID: 62955832-b6f2-4097-8949-e64fad588dee
 Before adding product: []
-After adding product: [{"id":"b41f87db-12c2-4ae8-90c1-50aecd2b37da","name":"Test Product","price":10.0}]
-Saved carts: [{"id":"cf814347-1100-4a01-a970-5a7d818cb1af","userId":"27a4b5ac-58f3-4978-922a-e866315fb5fb","products":[{"id":"b41f87db-12c2-4ae8-90c1-50aecd2b37da","name":"Test Product","price":10.0}]}]
- Carts after saving: [{"id":"cf814347-1100-4a01-a970-5a7d818cb1af","userId":"27a4b5ac-58f3-4978-922a-e866315fb5fb","products":[{"id":"b41f87db-12c2-4ae8-90c1-50aecd2b37da","name":"Test Product","price":10.0}]}]
+After adding product: [{"id":"e658f105-3a09-4575-8e78-d392224ebfa5","name":"Test Product","price":10.0}]
+Saved carts: [{"products":[{"id":"e658f105-3a09-4575-8e78-d392224ebfa5","name":"Test Product","price":10.0}],"id":"62955832-b6f2-4097-8949-e64fad588dee","userId":"cff28e2b-eae7-49f7-8608-05ced81af965"}]
+ Carts after saving: [{"products":[{"id":"e658f105-3a09-4575-8e78-d392224ebfa5","name":"Test Product","price":10.0}],"id":"62955832-b6f2-4097-8949-e64fad588dee","userId":"cff28e2b-eae7-49f7-8608-05ced81af965"}]
 ]]></system-out>
   </testcase>
   <testcase name="testAddCartEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
-    <system-out><![CDATA[Saved carts: [{"id":"833aeeca-bc63-48b5-b5e5-4e8f7864424f","userId":"d2ccb502-d452-4aaa-bdcc-ecb2dbfa91c7","products":[]}]
-✅ New cart created for user: d2ccb502-d452-4aaa-bdcc-ecb2dbfa91c7
+    <system-out><![CDATA[New cart created for user: 6805402b-4bea-4f4e-8f2b-e992724a3b34
+Saved carts: [{"products":[],"id":"af169705-bb02-473c-993c-3ae7782c2a62","userId":"6805402b-4bea-4f4e-8f2b-e992724a3b34"}]
 ]]></system-out>
   </testcase>
   <testcase name="testDeleteCartByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
-    <system-out><![CDATA[All Carts: [{"id":"10260788-86d6-48a8-be09-c9378597a957","userId":"18c9ad60-6bd1-481e-a000-e36e8170f3d4","products":[]}]
-Before deletion: [{"id":"10260788-86d6-48a8-be09-c9378597a957","userId":"18c9ad60-6bd1-481e-a000-e36e8170f3d4","products":[]}]
-Cart deleted: 10260788-86d6-48a8-be09-c9378597a957
+    <system-out><![CDATA[All Carts: [{"products":[],"id":"5e3c09d0-7cb0-4aeb-8fc8-664c511bf4b9","userId":"02fb93c4-06f5-4efb-952b-30bbe50f77e4"}]
+Before deletion: [{"products":[],"id":"5e3c09d0-7cb0-4aeb-8fc8-664c511bf4b9","userId":"02fb93c4-06f5-4efb-952b-30bbe50f77e4"}]
+Cart deleted: 5e3c09d0-7cb0-4aeb-8fc8-664c511bf4b9
 Saving: []
 After deletion: []
 ]]></system-out>
   </testcase>
   <testcase name="testGetUserByIdEndPoint" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
-    <system-out><![CDATA[All users: [{"id":"d4b89458-da71-48ba-a699-426620603a7c","name":"Test User8","orders":[]}]
+    <system-out><![CDATA[All users: [{"id":"2fae1b08-2582-413c-a8fc-6338d917d51f","name":"Test User8","orders":[]}]
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteUserByIdEndPoint1" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.004">
-    <system-out><![CDATA[All users: [{"id":"9a4cfa68-31fe-45a6-89b3-88687967da0a","name":"Test User18","orders":[]}]
-All users: [{"id":"9a4cfa68-31fe-45a6-89b3-88687967da0a","name":"Test User18","orders":[]}]
+  <testcase name="testDeleteUserByIdEndPoint1" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
+    <system-out><![CDATA[All users: [{"id":"ccbc809d-fc1c-4010-bc8c-ad253afe4b15","name":"Test User18","orders":[]}]
+All users: [{"id":"ccbc809d-fc1c-4010-bc8c-ad253afe4b15","name":"Test User18","orders":[]}]
 Saving: []
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteUserByIdEndPoint2" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.003">
-    <system-out><![CDATA[All users: [{"id":"b5d5dd8e-5d52-4c86-9646-33ce459a8c8d","name":"Test User18","orders":[]}]
+  <testcase name="testDeleteUserByIdEndPoint2" classname="com.example.MiniProject1.MiniProject1ApplicationTests" time="0.002">
+    <system-out><![CDATA[All users: [{"id":"418b179f-ec7c-4b3e-b45b-a3ca787aa858","name":"Test User18","orders":[]}]
 ]]></system-out>
   </testcase>
 </testsuite>

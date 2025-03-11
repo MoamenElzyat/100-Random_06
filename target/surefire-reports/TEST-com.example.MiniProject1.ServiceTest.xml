@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.MiniProject1.ServiceTest" time="0.159" tests="75" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/test-classes:/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/classes:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/3.4.2/spring-boot-starter-data-rest-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-webmvc/4.4.2/spring-data-rest-webmvc-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-core/4.4.2/spring-data-rest-core-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/hateoas/spring-hateoas/2.4.1/spring-hateoas-2.4.1.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/Asmem/.m2/repository/org/atteo/evo-inflector/1.3/evo-inflector-1.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.2/spring-boot-starter-web-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Asmem/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/Asmem/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/Asmem/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.2/spring-boot-starter-json-3.4.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.2/spring-boot-starter-tomcat-3.4.2.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/Asmem/.m2/repository/org/springframework/spring-web/6.2.2/spring-web-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/Asmem/.m2/repository/org/springframework/spring-webmvc/6.2.2/spring-webmvc-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/Asmem/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-devtools/3.4.2/spring-boot-devtools-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/Asmem/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/Asmem/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/Asmem/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/Asmem/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/Asmem/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/Asmem/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/Asmem/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/Asmem/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/Asmem/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/Asmem/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/Asmem/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/Asmem/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/Asmem/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/Asmem/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/Asmem/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/Asmem/.m2/repository/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar:/Users/Asmem/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/Asmem/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Asmem/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/Asmem/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="APPLICATION_NAME" value="MiniProject1"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire/surefirebooter-20250311065457894_3.jar /Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire 2025-03-11T06-54-57_804-jvmRun1 surefire-20250311065457894_1tmp surefire_0-20250311065457894_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/test-classes:/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/classes:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/3.4.2/spring-boot-starter-data-rest-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-webmvc/4.4.2/spring-data-rest-webmvc-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-rest-core/4.4.2/spring-data-rest-core-4.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-tx/6.2.2/spring-tx-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/hateoas/spring-hateoas/2.4.1/spring-hateoas-2.4.1.jar:/Users/Asmem/.m2/repository/org/springframework/data/spring-data-commons/3.4.2/spring-data-commons-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/plugin/spring-plugin-core/3.0.0/spring-plugin-core-3.0.0.jar:/Users/Asmem/.m2/repository/org/atteo/evo-inflector/1.3/evo-inflector-1.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.2/spring-boot-starter-web-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.2/spring-boot-starter-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.2/spring-boot-starter-logging-3.4.2.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-classic/1.5.16/logback-classic-1.5.16.jar:/Users/Asmem/.m2/repository/ch/qos/logback/logback-core/1.5.16/logback-core-1.5.16.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/Asmem/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Asmem/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/Asmem/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/Asmem/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.2/spring-boot-starter-json-3.4.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.2/spring-boot-starter-tomcat-3.4.2.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/Asmem/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/Asmem/.m2/repository/org/springframework/spring-web/6.2.2/spring-web-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-beans/6.2.2/spring-beans-6.2.2.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-observation/1.14.3/micrometer-observation-1.14.3.jar:/Users/Asmem/.m2/repository/io/micrometer/micrometer-commons/1.14.3/micrometer-commons-1.14.3.jar:/Users/Asmem/.m2/repository/org/springframework/spring-webmvc/6.2.2/spring-webmvc-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-aop/6.2.2/spring-aop-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-context/6.2.2/spring-context-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-expression/6.2.2/spring-expression-6.2.2.jar:/Users/Asmem/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-devtools/3.4.2/spring-boot-devtools-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot/3.4.2/spring-boot-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.2/spring-boot-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.2/spring-boot-starter-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test/3.4.2/spring-boot-test-3.4.2.jar:/Users/Asmem/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.2/spring-boot-test-autoconfigure-3.4.2.jar:/Users/Asmem/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/Asmem/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/Asmem/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/Asmem/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/Asmem/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/Asmem/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/Asmem/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/Asmem/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/Asmem/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/Asmem/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/Asmem/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/Asmem/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/Asmem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/Asmem/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/Asmem/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/Asmem/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/Asmem/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/Asmem/.m2/repository/org/springframework/spring-core/6.2.2/spring-core-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-jcl/6.2.2/spring-jcl-6.2.2.jar:/Users/Asmem/.m2/repository/org/springframework/spring-test/6.2.2/spring-test-6.2.2.jar:/Users/Asmem/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/Asmem/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/Asmem/.m2/repository/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar:/Users/Asmem/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/Asmem/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Asmem/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/Asmem/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/Asmem"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06/target/surefire/surefirebooter-20250311065457894_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="Asmem"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/Asmem/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/k3/l626c6vj2xzb7_86j308_8z00000gn/T/"/>
+    <property name="idea.version" value="2024.3.2.2"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/Asmem/Desktop/Scalabilty Learn/100-Random_06"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="14491"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Asmem/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[MiniProject1] "/>
+  </properties>
+  <testcase name="testGetOrders_EmptyList" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCartById_CartExists" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: c7e1364f-dc12-4a5f-a9fb-069009374ba4
+Saved carts: [{"products":[],"id":"8c8af767-6dce-40a0-92e5-4e5ce44451d9","userId":"c7e1364f-dc12-4a5f-a9fb-069009374ba4"}]
+All Carts: [{"products":[],"id":"8c8af767-6dce-40a0-92e5-4e5ce44451d9","userId":"c7e1364f-dc12-4a5f-a9fb-069009374ba4"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteOrderById_NullId" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProductFromCart_ProductNotInCart" classname="com.example.MiniProject1.ServiceTest" time="0.005">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"7c6002f2-7a64-484f-91d6-177995ce70a1","name":"Test User","orders":[]}]
+New cart created for user: 7c6002f2-7a64-484f-91d6-177995ce70a1
+Saved carts: [{"products":[],"id":"0a690a41-47e0-419d-b867-6bd63f8dd272","userId":"7c6002f2-7a64-484f-91d6-177995ce70a1"}]
+Cart after saving: {"products":[],"id":"0a690a41-47e0-419d-b867-6bd63f8dd272","userId":"7c6002f2-7a64-484f-91d6-177995ce70a1"}
+Saving: [{"products":[],"id":"0a690a41-47e0-419d-b867-6bd63f8dd272","userId":"7c6002f2-7a64-484f-91d6-177995ce70a1"}, {"products":[{"id":"948ea424-1c91-4937-9771-2c78a265d404","name":"watch","price":1500.0}],"id":"0a690a41-47e0-419d-b867-6bd63f8dd272","userId":"7c6002f2-7a64-484f-91d6-177995ce70a1"}]
+Carts before Deleting product: [{"products":[],"id":"0a690a41-47e0-419d-b867-6bd63f8dd272","userId":"7c6002f2-7a64-484f-91d6-177995ce70a1"}, {"products":[{"id":"948ea424-1c91-4937-9771-2c78a265d404","name":"watch","price":1500.0}],"id":"0a690a41-47e0-419d-b867-6bd63f8dd272","userId":"7c6002f2-7a64-484f-91d6-177995ce70a1"}]
+Looking for cart ID: 0a690a41-47e0-419d-b867-6bd63f8dd272
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductById_NonExistentProduct" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProducts_EmptyList" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Retrieved products: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCarts_NotEmptyList" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: 17bd2dcf-5980-485d-a096-38c1cbb94f5e
+Saved carts: [{"products":[],"id":"d8e951ee-23d4-42fe-8c5f-ba44e5a27c7d","userId":"17bd2dcf-5980-485d-a096-38c1cbb94f5e"}]
+New cart created for user: 1c73fbb8-fb44-47d0-b507-a596081efa44
+Saved carts: [{"products":[],"id":"d8e951ee-23d4-42fe-8c5f-ba44e5a27c7d","userId":"17bd2dcf-5980-485d-a096-38c1cbb94f5e"}, {"products":[],"id":"246ae34c-7de3-41b3-a174-f8e1c0410cb7","userId":"1c73fbb8-fb44-47d0-b507-a596081efa44"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProductById_NullId" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProductFromCart_NonExistentCart" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Carts before Deleting product: []
+Looking for cart ID: 244cb5c8-0b74-43ce-8ef5-6719193412d8
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteCartById_OnlyRemovesSpecifiedCart" classname="com.example.MiniProject1.ServiceTest" time="0.004">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: f9f64500-b102-4fa0-9a73-ee64d8d83503
+Saved carts: [{"products":[],"id":"ef9671cb-c930-4cb5-bd3f-1552a4022e8e","userId":"f9f64500-b102-4fa0-9a73-ee64d8d83503"}]
+New cart created for user: 890a12fc-0ae9-4fa3-8151-00c26c7f87d5
+Saved carts: [{"products":[],"id":"ef9671cb-c930-4cb5-bd3f-1552a4022e8e","userId":"f9f64500-b102-4fa0-9a73-ee64d8d83503"}, {"products":[],"id":"2e5b78ac-da03-4d7d-b43e-e19f1737db9b","userId":"890a12fc-0ae9-4fa3-8151-00c26c7f87d5"}]
+Before deletion: [{"products":[],"id":"ef9671cb-c930-4cb5-bd3f-1552a4022e8e","userId":"f9f64500-b102-4fa0-9a73-ee64d8d83503"}, {"products":[],"id":"2e5b78ac-da03-4d7d-b43e-e19f1737db9b","userId":"890a12fc-0ae9-4fa3-8151-00c26c7f87d5"}]
+Cart deleted: ef9671cb-c930-4cb5-bd3f-1552a4022e8e
+Saving: [{"products":[],"id":"2e5b78ac-da03-4d7d-b43e-e19f1737db9b","userId":"890a12fc-0ae9-4fa3-8151-00c26c7f87d5"}]
+After deletion: [{"products":[],"id":"2e5b78ac-da03-4d7d-b43e-e19f1737db9b","userId":"890a12fc-0ae9-4fa3-8151-00c26c7f87d5"}]
+All Carts: [{"products":[],"id":"2e5b78ac-da03-4d7d-b43e-e19f1737db9b","userId":"890a12fc-0ae9-4fa3-8151-00c26c7f87d5"}]
+All Carts: [{"products":[],"id":"2e5b78ac-da03-4d7d-b43e-e19f1737db9b","userId":"890a12fc-0ae9-4fa3-8151-00c26c7f87d5"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testApplyDiscount_NonExistentProducts" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddOrder_Success" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"products":[],"id":"70b503f5-2dd4-4076-9912-b9c3ca02a493","userId":"dd49f0be-86fa-42a9-8861-fb43a34d77cc","totalPrice":500.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrders_ReturnsNewInstance" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"products":[],"id":"717ea773-4f78-4678-b1c2-9b3209cc56d6","userId":"ad1c0fc0-a1fa-4bab-91f6-d188f4b4f77f","totalPrice":300.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrders_NotEmpty" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"products":[],"id":"6d94d681-f82c-4d66-9f0c-cf9cf332db79","userId":"2301e55d-826b-4743-adb8-086b55c1ef74","totalPrice":500.0}]
+Saving: [{"products":[],"id":"6d94d681-f82c-4d66-9f0c-cf9cf332db79","userId":"2301e55d-826b-4743-adb8-086b55c1ef74","totalPrice":500.0}, {"products":[],"id":"4867eaa6-9fd7-419c-ae1b-5a0dff41575a","userId":"195ed87b-3243-4f55-8b08-199e5f15c885","totalPrice":1000.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateProduct_InvalidValues" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"23ed28ac-c14a-4180-8c5a-32ab2fc1553b","name":"Old Name","price":900.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddCart_NullUserId" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testApplyDiscount_Success" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"f4f72a71-1415-430e-92b8-864fc7770199","name":"camera","price":200000.0}]
+Saving: [{"id":"f4f72a71-1415-430e-92b8-864fc7770199","name":"camera","price":200000.0}, {"id":"4c3fbc8c-6bcb-4ec9-acde-0bb8f79048fa","name":"piano","price":150000.0}]
+Saving: [{"id":"f4f72a71-1415-430e-92b8-864fc7770199","name":"camera","price":180000.0}, {"id":"4c3fbc8c-6bcb-4ec9-acde-0bb8f79048fa","name":"piano","price":135000.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteOrderById_Success" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"products":[],"id":"e7b1d367-fd7e-43d7-b943-fbb0c404882e","userId":"ff8f0c51-a2b2-4937-9c82-e5293fb2d245","totalPrice":500.0}]
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testRemoveOrderFromUser_Success" classname="com.example.MiniProject1.ServiceTest" time="0.007">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"cb676c22-7668-4614-b6bd-f731ee14c4f1","name":"Moamen With Orders","orders":[]}]
+New cart created for user: cb676c22-7668-4614-b6bd-f731ee14c4f1
+Saved carts: [{"products":[],"id":"797c973c-695b-4a35-8546-f245fe972b2c","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1"}]
+Cart after saving: {"products":[],"id":"797c973c-695b-4a35-8546-f245fe972b2c","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1"}
+Saving: [{"products":[],"id":"85c86635-8b11-4c29-beaf-a26930ed2578","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1","totalPrice":500.0}]
+Saving: [{"id":"cb676c22-7668-4614-b6bd-f731ee14c4f1","name":"Moamen With Orders","orders":[{"products":[],"id":"85c86635-8b11-4c29-beaf-a26930ed2578","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1","totalPrice":500.0}]}]
+All users: [{"id":"cb676c22-7668-4614-b6bd-f731ee14c4f1","name":"Moamen With Orders","orders":[{"products":[],"id":"85c86635-8b11-4c29-beaf-a26930ed2578","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1","totalPrice":500.0}]}]
+User orders before removal: [{"products":[],"id":"85c86635-8b11-4c29-beaf-a26930ed2578","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1","totalPrice":500.0}]
+All users: [{"id":"cb676c22-7668-4614-b6bd-f731ee14c4f1","name":"Moamen With Orders","orders":[{"products":[],"id":"85c86635-8b11-4c29-beaf-a26930ed2578","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1","totalPrice":500.0}]}]
+Before removal, user orders: [{"products":[],"id":"85c86635-8b11-4c29-beaf-a26930ed2578","userId":"cb676c22-7668-4614-b6bd-f731ee14c4f1","totalPrice":500.0}]
+Saving: [{"id":"cb676c22-7668-4614-b6bd-f731ee14c4f1","name":"Moamen With Orders","orders":[]}]
+After removal, user orders: []
+All users: [{"id":"cb676c22-7668-4614-b6bd-f731ee14c4f1","name":"Moamen With Orders","orders":[]}]
+User orders after removal: []
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteCartById_NonExistentCart" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Before deletion: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrderById_NullId" classname="com.example.MiniProject1.ServiceTest" time="0">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyCart_WithProducts" classname="com.example.MiniProject1.ServiceTest" time="0.004">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: 9f237cfe-9a94-4590-9c61-dea1208ef86d
+Saved carts: [{"products":[{"id":"5a5d6569-b008-43b4-935f-1ed29ddd3f62","name":"bed","price":14500.0}],"id":"29c8ffa5-b499-4a04-9fb0-062b08da57c9","userId":"9f237cfe-9a94-4590-9c61-dea1208ef86d"}]
+Before deletion: [{"products":[{"id":"5a5d6569-b008-43b4-935f-1ed29ddd3f62","name":"bed","price":14500.0}],"id":"29c8ffa5-b499-4a04-9fb0-062b08da57c9","userId":"9f237cfe-9a94-4590-9c61-dea1208ef86d"}]
+Cart deleted: 29c8ffa5-b499-4a04-9fb0-062b08da57c9
+Saving: []
+After deletion: []
+New cart created for user: 9f237cfe-9a94-4590-9c61-dea1208ef86d
+Saved carts: [{"products":[],"id":"29c8ffa5-b499-4a04-9fb0-062b08da57c9","userId":"9f237cfe-9a94-4590-9c61-dea1208ef86d"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testRemoveOrderFromUser_NonExistentOrder" classname="com.example.MiniProject1.ServiceTest" time="0.006">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"e93266df-6f94-49e1-8c49-5a8c23679fe0","name":"Moamen With Orders","orders":[]}]
+New cart created for user: e93266df-6f94-49e1-8c49-5a8c23679fe0
+Saved carts: [{"products":[],"id":"620821f7-525f-4373-8770-290c22611f5a","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0"}]
+Cart after saving: {"products":[],"id":"620821f7-525f-4373-8770-290c22611f5a","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0"}
+Saving: [{"id":"e93266df-6f94-49e1-8c49-5a8c23679fe0","name":"Moamen With Orders","orders":[{"products":[],"id":"816daaf3-8446-425e-bf93-e31f06dcac12","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0","totalPrice":500.0}]}]
+All users: [{"id":"e93266df-6f94-49e1-8c49-5a8c23679fe0","name":"Moamen With Orders","orders":[{"products":[],"id":"816daaf3-8446-425e-bf93-e31f06dcac12","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0","totalPrice":500.0}]}]
+ User after saving: {"id":"e93266df-6f94-49e1-8c49-5a8c23679fe0","name":"Moamen With Orders","orders":[{"products":[],"id":"816daaf3-8446-425e-bf93-e31f06dcac12","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0","totalPrice":500.0}]}
+All users: [{"id":"e93266df-6f94-49e1-8c49-5a8c23679fe0","name":"Moamen With Orders","orders":[{"products":[],"id":"816daaf3-8446-425e-bf93-e31f06dcac12","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0","totalPrice":500.0}]}]
+Before removal, user orders: [{"products":[],"id":"816daaf3-8446-425e-bf93-e31f06dcac12","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0","totalPrice":500.0}]
+All users: [{"id":"e93266df-6f94-49e1-8c49-5a8c23679fe0","name":"Moamen With Orders","orders":[{"products":[],"id":"816daaf3-8446-425e-bf93-e31f06dcac12","userId":"e93266df-6f94-49e1-8c49-5a8c23679fe0","totalPrice":500.0}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteOrderById_NonExistentOrder" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddUser_Success" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"7707043e-71d4-4266-8b79-cd35ef443427","name":"Moamen Ahmed","orders":[]}]
+New cart created for user: 7707043e-71d4-4266-8b79-cd35ef443427
+Saved carts: [{"products":[],"id":"b7b3d5b2-3884-467b-b635-a3987db8a578","userId":"7707043e-71d4-4266-8b79-cd35ef443427"}]
+Cart after saving: {"products":[],"id":"b7b3d5b2-3884-467b-b635-a3987db8a578","userId":"7707043e-71d4-4266-8b79-cd35ef443427"}
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProduct_ValidProduct" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"535474ae-aa4d-4242-9d22-1c490709a568","name":"Laptop","price":120000.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteUserById_WithOrdersAndCart" classname="com.example.MiniProject1.ServiceTest" time="0.005">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","name":"User ","orders":[]}]
+New cart created for user: 4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718
+Saved carts: [{"products":[],"id":"dbfb14ad-3344-40cf-9f2d-9586049d8191","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718"}]
+Cart after saving: {"products":[],"id":"dbfb14ad-3344-40cf-9f2d-9586049d8191","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718"}
+Saving: [{"products":[],"id":"a7dcc347-154e-492c-b2f8-deb3aba2f688","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","totalPrice":300.0}]
+Saving: [{"id":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","name":"User ","orders":[{"products":[],"id":"a7dcc347-154e-492c-b2f8-deb3aba2f688","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","totalPrice":300.0}]}]
+All users: [{"id":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","name":"User ","orders":[{"products":[],"id":"a7dcc347-154e-492c-b2f8-deb3aba2f688","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","totalPrice":300.0}]}]
+All users: [{"id":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","name":"User ","orders":[{"products":[],"id":"a7dcc347-154e-492c-b2f8-deb3aba2f688","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","totalPrice":300.0}]}]
+All users: [{"id":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","name":"User ","orders":[{"products":[],"id":"a7dcc347-154e-492c-b2f8-deb3aba2f688","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718","totalPrice":300.0}]}]
+Saving: []
+Before deletion: [{"products":[],"id":"dbfb14ad-3344-40cf-9f2d-9586049d8191","userId":"4fbd486a-fbfc-42ef-9e6e-e4b52a8f2718"}]
+Cart deleted: dbfb14ad-3344-40cf-9f2d-9586049d8191
+Saving: []
+After deletion: []
+Saving: []
+All users: []
+All users: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductById_NullId" classname="com.example.MiniProject1.ServiceTest" time="0">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddOrderToUser_Success" classname="com.example.MiniProject1.ServiceTest" time="0.007">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"b7fb13ca-0be6-4309-9288-f58b708911eb","name":"Moamen","orders":[]}]
+Saving: [{"products":[],"id":"34eb9b9a-8aa2-47ed-b18e-75ad9131f676","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb"}]
+Saving: [{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}]
+Carts before adding product: [{"products":[],"id":"34eb9b9a-8aa2-47ed-b18e-75ad9131f676","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb"}]
+Looking for cart ID: 34eb9b9a-8aa2-47ed-b18e-75ad9131f676
+Before adding product: []
+After adding product: [{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}]
+Saved carts: [{"products":[{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}],"id":"34eb9b9a-8aa2-47ed-b18e-75ad9131f676","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb"}]
+ Carts after saving: [{"products":[{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}],"id":"34eb9b9a-8aa2-47ed-b18e-75ad9131f676","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb"}]
+All users: [{"id":"b7fb13ca-0be6-4309-9288-f58b708911eb","name":"Moamen","orders":[]}]
+Saving: [{"products":[{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}],"id":"fc0b7460-92b7-4d92-ba99-d9cfbc9fded8","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb","totalPrice":100.0}]
+Saving: [{"id":"b7fb13ca-0be6-4309-9288-f58b708911eb","name":"Moamen","orders":[{"products":[{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}],"id":"fc0b7460-92b7-4d92-ba99-d9cfbc9fded8","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb","totalPrice":100.0}]}]
+Before deletion: [{"products":[{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}],"id":"34eb9b9a-8aa2-47ed-b18e-75ad9131f676","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb"}]
+Cart deleted: 34eb9b9a-8aa2-47ed-b18e-75ad9131f676
+Saving: []
+After deletion: []
+New cart created for user: b7fb13ca-0be6-4309-9288-f58b708911eb
+Saved carts: [{"products":[],"id":"34eb9b9a-8aa2-47ed-b18e-75ad9131f676","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb"}]
+All users: [{"id":"b7fb13ca-0be6-4309-9288-f58b708911eb","name":"Moamen","orders":[{"products":[{"id":"567c143b-83a3-49eb-bf2f-77efc12e3ab8","name":"chair","price":100.0}],"id":"fc0b7460-92b7-4d92-ba99-d9cfbc9fded8","userId":"b7fb13ca-0be6-4309-9288-f58b708911eb","totalPrice":100.0}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserById_AfterMultipleUsersAdded" classname="com.example.MiniProject1.ServiceTest" time="0.005">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"69964929-c4e5-4a97-a058-441cd2461e18","name":"User One","orders":[]}]
+New cart created for user: 69964929-c4e5-4a97-a058-441cd2461e18
+Saved carts: [{"products":[],"id":"d4893dcc-e173-4aae-80ff-af268f152523","userId":"69964929-c4e5-4a97-a058-441cd2461e18"}]
+Cart after saving: {"products":[],"id":"d4893dcc-e173-4aae-80ff-af268f152523","userId":"69964929-c4e5-4a97-a058-441cd2461e18"}
+Saving: [{"id":"69964929-c4e5-4a97-a058-441cd2461e18","name":"User One","orders":[]}, {"id":"2133f71c-5ead-4778-9248-3bb01bb2d095","name":"User Two","orders":[]}]
+New cart created for user: 2133f71c-5ead-4778-9248-3bb01bb2d095
+Saved carts: [{"products":[],"id":"d4893dcc-e173-4aae-80ff-af268f152523","userId":"69964929-c4e5-4a97-a058-441cd2461e18"}, {"products":[],"id":"c9d00ed2-dee8-4296-84e8-e69ab3d8bff1","userId":"2133f71c-5ead-4778-9248-3bb01bb2d095"}]
+Cart after saving: {"products":[],"id":"c9d00ed2-dee8-4296-84e8-e69ab3d8bff1","userId":"2133f71c-5ead-4778-9248-3bb01bb2d095"}
+All users: [{"id":"69964929-c4e5-4a97-a058-441cd2461e18","name":"User One","orders":[]}, {"id":"2133f71c-5ead-4778-9248-3bb01bb2d095","name":"User Two","orders":[]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateProduct_Success" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"72e3fc18-145c-400e-ab19-75093d0a33ce","name":"Old Laptop","price":100000.0}]
+Saving: [{"id":"72e3fc18-145c-400e-ab19-75093d0a33ce","name":"New Laptop","price":120000.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProductToCart_NullProduct" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: 29faa7d7-1771-435c-992f-e6ba9accacfc
+Saved carts: [{"products":[],"id":"7e8b6577-7840-4c57-a06f-cf1484adf1d3","userId":"29faa7d7-1771-435c-992f-e6ba9accacfc"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddOrder_DuplicateOrder" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"products":[],"id":"1eb35bbf-ae2f-497d-90f0-3a562a593743","userId":"9742b321-00d7-485f-8149-576b47fdec5f","totalPrice":700.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductById_ExistingProduct" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"a5c1c9a2-8eb6-49a4-a9f8-1161f9fe7062","name":"table","price":400.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProduct_NullName" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testRemoveOrderFromUser_NonExistentUser" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+All users: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCartByUserId_NullUserId" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddUser_DuplicateUser" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"1eac9a29-e8cb-4422-a4bd-c05670fea240","name":"Moamen Ahmed","orders":[]}]
+New cart created for user: 1eac9a29-e8cb-4422-a4bd-c05670fea240
+Saved carts: [{"products":[],"id":"e1731c61-ea07-4b5b-832b-a2757222a188","userId":"1eac9a29-e8cb-4422-a4bd-c05670fea240"}]
+Cart after saving: {"products":[],"id":"e1731c61-ea07-4b5b-832b-a2757222a188","userId":"1eac9a29-e8cb-4422-a4bd-c05670fea240"}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCartById_CartNotFound" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+All Carts: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserById_UserExists" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"e35b17a3-bd12-422a-bc52-620e5ded359e","name":"Moamen Test","orders":[]}]
+New cart created for user: e35b17a3-bd12-422a-bc52-620e5ded359e
+Saved carts: [{"products":[],"id":"c59c37f9-0f08-403f-beb9-cbe51b5ebffa","userId":"e35b17a3-bd12-422a-bc52-620e5ded359e"}]
+Cart after saving: {"products":[],"id":"c59c37f9-0f08-403f-beb9-cbe51b5ebffa","userId":"e35b17a3-bd12-422a-bc52-620e5ded359e"}
+All users: [{"id":"e35b17a3-bd12-422a-bc52-620e5ded359e","name":"Moamen Test","orders":[]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrdersByUserId_NoOrders" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"4f933514-16e8-4928-abd1-1280772111ae","name":"Moamen No Orders","orders":[]}]
+New cart created for user: 4f933514-16e8-4928-abd1-1280772111ae
+Saved carts: [{"products":[],"id":"d086c3d2-5d56-45ce-ac0b-ca27e71f6b43","userId":"4f933514-16e8-4928-abd1-1280772111ae"}]
+Cart after saving: {"products":[],"id":"d086c3d2-5d56-45ce-ac0b-ca27e71f6b43","userId":"4f933514-16e8-4928-abd1-1280772111ae"}
+All users: [{"id":"4f933514-16e8-4928-abd1-1280772111ae","name":"Moamen No Orders","orders":[]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUsers_NotEmptyList" classname="com.example.MiniProject1.ServiceTest" time="0.009">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"2fb83d02-e501-413c-a753-541a48cb5073","name":"Moamen 1","orders":[]}]
+New cart created for user: 2fb83d02-e501-413c-a753-541a48cb5073
+Saved carts: [{"products":[],"id":"58a7c9ba-1dd9-48e4-98a5-6f1924666779","userId":"2fb83d02-e501-413c-a753-541a48cb5073"}]
+Cart after saving: {"products":[],"id":"58a7c9ba-1dd9-48e4-98a5-6f1924666779","userId":"2fb83d02-e501-413c-a753-541a48cb5073"}
+Saving: [{"id":"2fb83d02-e501-413c-a753-541a48cb5073","name":"Moamen 1","orders":[]}, {"id":"b3c2ab67-a1e9-411b-b2c1-c01d9a78bb29","name":"Moamen 2","orders":[]}]
+New cart created for user: b3c2ab67-a1e9-411b-b2c1-c01d9a78bb29
+Saved carts: [{"products":[],"id":"58a7c9ba-1dd9-48e4-98a5-6f1924666779","userId":"2fb83d02-e501-413c-a753-541a48cb5073"}, {"products":[],"id":"f2d57ce1-7fae-4ef1-b1f5-786ab0eef729","userId":"b3c2ab67-a1e9-411b-b2c1-c01d9a78bb29"}]
+Cart after saving: {"products":[],"id":"f2d57ce1-7fae-4ef1-b1f5-786ab0eef729","userId":"b3c2ab67-a1e9-411b-b2c1-c01d9a78bb29"}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCartByUserId_UserHasCart" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: f22713c3-856d-4b60-aa8f-b1f08b009fd8
+Saved carts: [{"products":[],"id":"e0fe6404-6720-4c86-b321-1cb73fd94447","userId":"f22713c3-856d-4b60-aa8f-b1f08b009fd8"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProduct_DuplicateProduct" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"3967da4b-5406-4ef0-9e43-8c5a3a1100da","name":"haand","price":1200.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testApplyDiscount_InvalidDiscount" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrdersByUserId_NonExistentUser" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+All users: []
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProductById_NonExistentProduct" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddCart_DuplicateUserCart" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: 0d20baaa-f816-493a-afa6-2b822dff81f1
+Saved carts: [{"products":[],"id":"e102234a-7cbb-4889-8222-c89ca84b885e","userId":"0d20baaa-f816-493a-afa6-2b822dff81f1"}]
+Cart after saving: {"products":[],"id":"e102234a-7cbb-4889-8222-c89ca84b885e","userId":"0d20baaa-f816-493a-afa6-2b822dff81f1"}
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProductToCart_NonExistentCart" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"eb90881c-9d0e-4be5-88aa-58ed2788f697","name":"iPhone","price":8000.0}]
+Carts before adding product: []
+Looking for cart ID: f47a155f-eff2-406e-bfa5-e269929f6934
+]]></system-out>
+  </testcase>
+  <testcase name="testAddOrderToUser_EmptyCart" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"9bfa2216-601d-463b-bca2-44c5260068d1","name":"Moamen","orders":[]}]
+New cart created for user: 9bfa2216-601d-463b-bca2-44c5260068d1
+Saved carts: [{"products":[],"id":"222e2bb0-a50a-400e-bdb2-fec9f54713a6","userId":"9bfa2216-601d-463b-bca2-44c5260068d1"}]
+Cart after saving: {"products":[],"id":"222e2bb0-a50a-400e-bdb2-fec9f54713a6","userId":"9bfa2216-601d-463b-bca2-44c5260068d1"}
+All users: [{"id":"9bfa2216-601d-463b-bca2-44c5260068d1","name":"Moamen","orders":[]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyCart_NonExistentCart" classname="com.example.MiniProject1.ServiceTest" time="0">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProductById_Success" classname="com.example.MiniProject1.ServiceTest" time="0">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"25d8fe5f-408c-45f6-ba70-4d79c4c4f1fe","name":"Headphones","price":1500.0}]
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteUserById" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"947eb09c-0bf3-4d81-bf4c-844d4ac9617b","name":"User To Delete","orders":[]}]
+New cart created for user: 947eb09c-0bf3-4d81-bf4c-844d4ac9617b
+Saved carts: [{"products":[],"id":"c02f8d90-73b8-47e1-8138-9a64c747e1ec","userId":"947eb09c-0bf3-4d81-bf4c-844d4ac9617b"}]
+Cart after saving: {"products":[],"id":"c02f8d90-73b8-47e1-8138-9a64c747e1ec","userId":"947eb09c-0bf3-4d81-bf4c-844d4ac9617b"}
+All users: [{"id":"947eb09c-0bf3-4d81-bf4c-844d4ac9617b","name":"User To Delete","orders":[]}]
+All users: [{"id":"947eb09c-0bf3-4d81-bf4c-844d4ac9617b","name":"User To Delete","orders":[]}]
+Before deletion: [{"products":[],"id":"c02f8d90-73b8-47e1-8138-9a64c747e1ec","userId":"947eb09c-0bf3-4d81-bf4c-844d4ac9617b"}]
+Cart deleted: c02f8d90-73b8-47e1-8138-9a64c747e1ec
+Saving: []
+After deletion: []
+Saving: []
+All users: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrderById_NonExistentOrder" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateProduct_NonExistentProduct" classname="com.example.MiniProject1.ServiceTest" time="0">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCarts_EmptyList" classname="com.example.MiniProject1.ServiceTest" time="0">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyCart_AlreadyEmpty" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: 4a5ae1fa-ec2d-48c7-9791-82d29cafb424
+Saved carts: [{"products":[],"id":"36ff556f-e0cc-43cc-8653-df426afd54da","userId":"4a5ae1fa-ec2d-48c7-9791-82d29cafb424"}]
+Before deletion: [{"products":[],"id":"36ff556f-e0cc-43cc-8653-df426afd54da","userId":"4a5ae1fa-ec2d-48c7-9791-82d29cafb424"}]
+Cart deleted: 36ff556f-e0cc-43cc-8653-df426afd54da
+Saving: []
+After deletion: []
+New cart created for user: 4a5ae1fa-ec2d-48c7-9791-82d29cafb424
+Saved carts: [{"products":[],"id":"36ff556f-e0cc-43cc-8653-df426afd54da","userId":"4a5ae1fa-ec2d-48c7-9791-82d29cafb424"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUsers_EmptyList" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProducts_AfterAddingAndDeletingProduct" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"dd1fbb9e-1e92-4ce0-8d75-80e36640dc58","name":"Tablet","price":50000.0}]
+Retrieved products: [{"id":"dd1fbb9e-1e92-4ce0-8d75-80e36640dc58","name":"Tablet","price":50000.0}]
+Saving: []
+Retrieved products: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrdersByUserId_WithOrders" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"53eebadd-69e8-4408-bdd2-4e77de135863","name":"Moamen With Orders","orders":[]}]
+New cart created for user: 53eebadd-69e8-4408-bdd2-4e77de135863
+Saved carts: [{"products":[],"id":"9131c0c4-0242-4dce-b6c4-43e21f4ee42e","userId":"53eebadd-69e8-4408-bdd2-4e77de135863"}]
+Cart after saving: {"products":[],"id":"9131c0c4-0242-4dce-b6c4-43e21f4ee42e","userId":"53eebadd-69e8-4408-bdd2-4e77de135863"}
+Saving: []
+Saving: [{"id":"53eebadd-69e8-4408-bdd2-4e77de135863","name":"Moamen With Orders","orders":[{"products":[],"id":"256f91f0-69bc-45c4-bfab-8320ea2d63c3","userId":"53eebadd-69e8-4408-bdd2-4e77de135863","totalPrice":500.0},{"products":[],"id":"efb7ecf2-14cf-4772-b7c5-785b24216eda","userId":"53eebadd-69e8-4408-bdd2-4e77de135863","totalPrice":1000.0}]}]
+All users: [{"id":"53eebadd-69e8-4408-bdd2-4e77de135863","name":"Moamen With Orders","orders":[{"products":[],"id":"256f91f0-69bc-45c4-bfab-8320ea2d63c3","userId":"53eebadd-69e8-4408-bdd2-4e77de135863","totalPrice":500.0},{"products":[],"id":"efb7ecf2-14cf-4772-b7c5-785b24216eda","userId":"53eebadd-69e8-4408-bdd2-4e77de135863","totalPrice":1000.0}]}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProductToCart_Success" classname="com.example.MiniProject1.ServiceTest" time="0.003">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: 9b8a0579-d149-427d-9827-57697baf35a5
+Saved carts: [{"products":[],"id":"eb17555b-d0ef-406d-92fe-3bef27e3fc8a","userId":"9b8a0579-d149-427d-9827-57697baf35a5"}]
+Saving: [{"id":"e04f5e9c-5c22-4610-a15b-5b6eda5bc534","name":"VR","price":4200.0}]
+Carts before adding product: [{"products":[],"id":"eb17555b-d0ef-406d-92fe-3bef27e3fc8a","userId":"9b8a0579-d149-427d-9827-57697baf35a5"}]
+Looking for cart ID: eb17555b-d0ef-406d-92fe-3bef27e3fc8a
+Before adding product: []
+After adding product: [{"id":"e04f5e9c-5c22-4610-a15b-5b6eda5bc534","name":"VR","price":4200.0}]
+Saved carts: [{"products":[{"id":"e04f5e9c-5c22-4610-a15b-5b6eda5bc534","name":"VR","price":4200.0}],"id":"eb17555b-d0ef-406d-92fe-3bef27e3fc8a","userId":"9b8a0579-d149-427d-9827-57697baf35a5"}]
+ Carts after saving: [{"products":[{"id":"e04f5e9c-5c22-4610-a15b-5b6eda5bc534","name":"VR","price":4200.0}],"id":"eb17555b-d0ef-406d-92fe-3bef27e3fc8a","userId":"9b8a0579-d149-427d-9827-57697baf35a5"}]
+All Carts: [{"products":[{"id":"e04f5e9c-5c22-4610-a15b-5b6eda5bc534","name":"VR","price":4200.0}],"id":"eb17555b-d0ef-406d-92fe-3bef27e3fc8a","userId":"9b8a0579-d149-427d-9827-57697baf35a5"}]
+Updated Cart: {"products":[{"id":"e04f5e9c-5c22-4610-a15b-5b6eda5bc534","name":"VR","price":4200.0}],"id":"eb17555b-d0ef-406d-92fe-3bef27e3fc8a","userId":"9b8a0579-d149-427d-9827-57697baf35a5"}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrderById_ExistingOrder" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"products":[],"id":"9c81c703-ae0d-47b1-8647-edb0a298548d","userId":"e438d3ad-cf6b-4573-9d8f-061f94bc220f","totalPrice":500.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testAddCart_Success" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: d9d35f9c-363b-41ba-bce5-f9138924ff6e
+Saved carts: [{"products":[],"id":"2a64b7bf-7adf-4e3d-81bd-e55192bb962b","userId":"d9d35f9c-363b-41ba-bce5-f9138924ff6e"}]
+Cart after saving: {"products":[],"id":"2a64b7bf-7adf-4e3d-81bd-e55192bb962b","userId":"d9d35f9c-363b-41ba-bce5-f9138924ff6e"}
+All Carts: [{"products":[],"id":"2a64b7bf-7adf-4e3d-81bd-e55192bb962b","userId":"d9d35f9c-363b-41ba-bce5-f9138924ff6e"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProductFromCart_Success" classname="com.example.MiniProject1.ServiceTest" time="0.006">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"4230392f-40af-4690-99cf-d724a805f7aa","name":"Test User","orders":[]}]
+New cart created for user: 4230392f-40af-4690-99cf-d724a805f7aa
+Saved carts: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}]
+Cart after saving: {"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}
+New cart created for user: 6fb07e28-524c-4d63-b171-909b98686df9
+Saved carts: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+Cart after saving: {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}
+Carts before adding product: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+Looking for cart ID: 4230392f-40af-4690-99cf-d724a805f7aa
+Before adding product: []
+After adding product: [{"id":"16340ab9-512e-4af4-814f-4a7f1f93bf85","name":"Headphones","price":250.0}]
+Saved carts: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[{"id":"16340ab9-512e-4af4-814f-4a7f1f93bf85","name":"Headphones","price":250.0}],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+ Carts after saving: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[{"id":"16340ab9-512e-4af4-814f-4a7f1f93bf85","name":"Headphones","price":250.0}],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+Saving: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[{"id":"16340ab9-512e-4af4-814f-4a7f1f93bf85","name":"Headphones","price":250.0}],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+All carts after saving: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[{"id":"16340ab9-512e-4af4-814f-4a7f1f93bf85","name":"Headphones","price":250.0}],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+Carts before Deleting product: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[{"id":"16340ab9-512e-4af4-814f-4a7f1f93bf85","name":"Headphones","price":250.0}],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+Looking for cart ID: 4230392f-40af-4690-99cf-d724a805f7aa
+Saved carts: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+Carts after saving: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+All Carts: [{"products":[],"id":"86e135c8-0bd2-4863-801e-414528387eed","userId":"4230392f-40af-4690-99cf-d724a805f7aa"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}, {"products":[],"id":"4230392f-40af-4690-99cf-d724a805f7aa","userId":"6fb07e28-524c-4d63-b171-909b98686df9"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteNonExistentUser" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+All users: []
+All users: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddOrderToUser_UserNotFound" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+All users: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCarts_ReturnsNewInstance" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: c53b55b3-4330-447e-bdb3-7675dba66c57
+Saved carts: [{"products":[],"id":"4b533b04-884b-4889-aa8f-7baeecd436fd","userId":"c53b55b3-4330-447e-bdb3-7675dba66c57"}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUsers_ReturnsNewInstance" classname="com.example.MiniProject1.ServiceTest" time="0.002">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"16a8f21b-79c9-4364-9a66-8015a4fae8da","name":"User A","orders":[]}]
+New cart created for user: 16a8f21b-79c9-4364-9a66-8015a4fae8da
+Saved carts: [{"products":[],"id":"bd1e9a49-3205-4474-a636-9578970e4305","userId":"16a8f21b-79c9-4364-9a66-8015a4fae8da"}]
+Cart after saving: {"products":[],"id":"bd1e9a49-3205-4474-a636-9578970e4305","userId":"16a8f21b-79c9-4364-9a66-8015a4fae8da"}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCartById_NullId" classname="com.example.MiniProject1.ServiceTest" time="0">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddUser_InvalidData" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testAddOrder_NullId" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteCartById_Success" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+New cart created for user: 2f1fba9a-e4ad-4bcb-9a6a-c7e758aa8719
+Saved carts: [{"products":[],"id":"f2af3be8-3d00-4499-9625-1281e4265030","userId":"2f1fba9a-e4ad-4bcb-9a6a-c7e758aa8719"}]
+Before deletion: [{"products":[],"id":"f2af3be8-3d00-4499-9625-1281e4265030","userId":"2f1fba9a-e4ad-4bcb-9a6a-c7e758aa8719"}]
+Cart deleted: f2af3be8-3d00-4499-9625-1281e4265030
+Saving: []
+After deletion: []
+All Carts: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProducts_NotEmpty" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+Saving: [{"id":"902efd43-ed22-42f9-96cc-79088ba0c154","name":"poster","price":500.0}]
+Saving: [{"id":"902efd43-ed22-42f9-96cc-79088ba0c154","name":"poster","price":500.0}, {"id":"013e1f0d-ebe7-4cd3-8961-2657ed9c7671","name":"charger","price":800.0}]
+Retrieved products: [{"id":"902efd43-ed22-42f9-96cc-79088ba0c154","name":"poster","price":500.0}, {"id":"013e1f0d-ebe7-4cd3-8961-2657ed9c7671","name":"charger","price":800.0}]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserById_UserNotFound" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+All users: []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCartByUserId_UserHasNoCart" classname="com.example.MiniProject1.ServiceTest" time="0.001">
+    <system-out><![CDATA[Saving: []
+Saving: []
+Saving: []
+Saving: []
+]]></system-out>
+  </testcase>
+</testsuite>

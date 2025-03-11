@@ -36,21 +36,23 @@ public class CartRepository extends MainRepository<Cart> {
 
         List<Cart> carts = findAll();
 
-        // ✅ البحث عن العربة الموجودة بدلاً من السماح بإنشاء عربة جديدة
         Optional<Cart> existingCart = carts.stream()
                 .filter(c -> c.getUserId().equals(cart.getUserId()))
                 .findFirst();
 
         if (existingCart.isPresent()) {
-            System.out.println("🛒 User already has a cart: " + existingCart.get());
-            return existingCart.get(); // ✅ أعد العربة الموجودة
+            Cart oldCart = existingCart.get();
+            if (oldCart.getProducts() != null && !oldCart.getProducts().isEmpty()) {
+                cart.getProducts().addAll(oldCart.getProducts());
+            }
+            carts.remove(oldCart);
+            System.out.println("Existing cart overridden for user: " + cart.getUserId());
+        } else {
+            System.out.println("New cart created for user: " + cart.getUserId());
         }
 
-        // ✅ إذا لم تكن هناك عربة، أضف عربة جديدة
         carts.add(cart);
         saveAll(carts);
-
-        System.out.println("✅ New cart created for user: " + cart.getUserId());
         return cart;
     }
 
@@ -71,11 +73,14 @@ public class CartRepository extends MainRepository<Cart> {
                 .findFirst()
                 .orElse(null);
     }
+
     public void addProductToCart(UUID cartId, Product product) {
         if (product == null) {
             throw new IllegalArgumentException("Product cannot be null");
         }
         List<Cart> carts = findAll();
+        System.out.println("Carts before adding product: " + carts);
+        System.out.println("Looking for cart ID: " + cartId);
         boolean updated = false;
 
         for (Cart cart : carts) {
@@ -100,13 +105,22 @@ public class CartRepository extends MainRepository<Cart> {
             throw new IllegalArgumentException("Cart not found!");
         }
     }
-    public void deleteProductFromCart(UUID userId, Product product) {
+    public void deleteProductFromCart(UUID cartId, Product product) {
+        if (product == null) {
+            throw new IllegalArgumentException("Product cannot be null");
+        }
         List<Cart> carts = findAll();
+        System.out.println("Carts before Deleting product: " + carts);
+        System.out.println("Looking for cart ID: " + cartId);
 
         Cart cart = carts.stream()
-                .filter(c -> c.getUserId().equals(userId))
+                .filter(c -> c.getId().equals(cartId))
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Cart not found!"));
+
+        if (cart.getProducts() == null || cart.getProducts().isEmpty()) {
+            throw new IllegalArgumentException("Cart is empty or products list is null!");
+        }
 
         boolean removed = cart.getProducts().removeIf(p -> p.getId().equals(product.getId()));
 
@@ -115,8 +129,9 @@ public class CartRepository extends MainRepository<Cart> {
         }
 
         saveAll(carts);
-        System.out.println("✅ Product removed from cart successfully!");
+        System.out.println("Carts after saving: " + findAll());
     }
+
 
     public void deleteCartById(UUID cartId) {
         List<Cart> carts = findAll();
@@ -148,9 +163,11 @@ public class CartRepository extends MainRepository<Cart> {
             throw new RuntimeException("Failed to read from JSON file", e);
         }
     }
+
     public void saveAll(List<Cart> carts) {
         try {
-            objectMapper.writeValue(new File(getDataPath()), carts);
+            File file = new File(getDataPath());
+            objectMapper.writeValue(file, carts);
             System.out.println("Saved carts: " + carts);
         } catch (IOException e) {
             throw new RuntimeException("Failed to write to JSON file", e);

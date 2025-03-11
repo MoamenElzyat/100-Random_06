@@ -15,30 +15,26 @@ public class OrderRepository extends MainRepository<Order> {
 
     @Override
     protected String getDataPath() {
-        return "src/main/java/com/example/data/orders.json"; // Path to store orders JSON
+        return "src/main/java/com/example/data/orders.json";
     }
 
     @Override
     protected Class<Order[]> getArrayType() {
-        return Order[].class; // Correct return type for deserialization
+        return Order[].class;
     }
 
-    // Add a New Order
     public void addOrder(Order order) {
-        save(order); // Save new order to JSON
+        save(order);
     }
 
-    // Get All Orders
     public ArrayList<Order> getOrders() {
-        return findAll(); // Retrieve all orders
+        return findAll();
     }
 
-    //  Get Specific Order by ID
     public Order getOrderById(UUID orderId) {
         return findAll().stream().filter(order -> order.getId().equals(orderId)).findFirst().orElse(null);
     }
 
-    //  Delete a Specific Order by ID
     public void deleteOrderById(UUID orderId) {
         List<Order> orders = findAll();
         orders.removeIf(order -> order.getId().equals(orderId));

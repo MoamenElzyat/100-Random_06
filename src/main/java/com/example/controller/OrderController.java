@@ -39,9 +39,9 @@ public class OrderController {
     public ResponseEntity<String> deleteOrderById(@PathVariable UUID id) {
         try {
             orderService.deleteOrderById(id);
-            return ResponseEntity.ok("Order deleted successfully"); // Return 200 OK with success message
+            return ResponseEntity.ok("Order deleted successfully");
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.ok("Order not found"); // Return 200 OK with "Order not found" message
+            return ResponseEntity.ok("Order not found");
         }
     }
 }

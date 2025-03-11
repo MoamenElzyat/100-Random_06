@@ -12,7 +12,7 @@ import java.util.UUID;
 
 @Component
 public class User {
-   // @JsonProperty("id")
+    @JsonProperty("id")
     private UUID id;
     @JsonProperty("name")
     private String name;

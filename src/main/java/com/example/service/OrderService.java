@@ -13,7 +13,6 @@ public class OrderService extends MainService<Order> {
 
     private final OrderRepository orderRepository;
 
-    //  Constructor for Dependency Injection
     public OrderService(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }

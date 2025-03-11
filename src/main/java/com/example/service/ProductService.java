@@ -93,11 +93,11 @@ public class ProductService extends MainService<Product> {
         ProductRepository productRepository = new ProductRepository();
         ProductService productService = new ProductService(productRepository);
 
-        Product testProduct = new Product(UUID.randomUUID(), "Laptop", 1200.0);
+        Product testProduct = new Product(UUID.randomUUID(), "cigarette", 100.0);
         productService.addProduct(testProduct);
 
         ArrayList<Product> allProducts = productService.getAll();
-        System.out.println("🔍 All Products after adding: " + allProducts);
+        System.out.println(" All Products after adding: " + allProducts);
     }
 
 }
